@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--
 THESIS: Siege Winds porte une promesse mémorable : réussir le tir qui fait réellement tomber la forteresse adverse.
 OWN-WORLD: Nuit alpine, forts de pierre monumentaux, canons de fer, bannières bleues et rouges, barres de commandement or forgé et fumée éclairée par l’impact.
@@ -69,7 +69,7 @@ FORM: Magazine du front des forteresses, quatrième structure ancrée, seed 5fb0
       <p class="hero-caption" aria-hidden="true">Un seul boulet peut décider du siège.</p>
     </section>
 
-    <div class="command-strip" aria-label="Les quatre étapes d’un tir">
+    <div class="command-strip" role="group" aria-label="Les quatre étapes d’un tir">
       <span>Repère la faille</span><i aria-hidden="true">◆</i>
       <span>Règle le canon</span><i aria-hidden="true">◆</i>
       <span>Ouvre la brèche</span><i aria-hidden="true">◆</i>
@@ -134,7 +134,7 @@ FORM: Magazine du front des forteresses, quatrième structure ancrée, seed 5fb0
         <ul class="arsenal-facts"><li><strong>15</strong><span>canons prévus</span></li><li><strong>0</strong><span>récompense aléatoire payante</span></li></ul>
         <p class="localization-note">Les écrans de progression présentent le build anglais actuellement en développement.</p>
       </div>
-      <div class="arsenal-stage" aria-label="Écrans de progression du build anglais actuel de Siege Winds">
+      <div class="arsenal-stage" role="group" aria-label="Écrans de progression du build anglais actuel de Siege Winds">
         <img class="arsenal-stage__journey" src="assets/images/choose-your-journey.jpg" width="1080" height="1920" loading="lazy" alt="Sélection des parcours Siege Winds avec campagne, arcade, tutoriel et classement.">
         <img class="arsenal-stage__collection" src="assets/images/build-your-arsenal.jpg" width="1080" height="1920" loading="lazy" alt="Collection de canons Siege Winds montrant plusieurs pièces d’artillerie à débloquer.">
       </div>
@@ -145,7 +145,7 @@ FORM: Magazine du front des forteresses, quatrième structure ancrée, seed 5fb0
         <p class="section-index">05 / La règle du siège</p>
         <h2 id="oath-title">La victoire se gagne.<br><span>Elle ne s’achète pas.</span></h2>
         <div class="oath-copy">
-          <p>Une progression sans tirage aléatoire payant et aucun avantage à acheter : le meilleur tir décide du vainqueur.</p>
+          <p>Une progression sans tirage aléatoire payant ni avantage à acheter : le meilleur tir décide du vainqueur.</p>
           <ul class="oath-list"><li>Aucun coffre aléatoire</li><li>Aucun avantage payant</li><li>Aucun pari</li><li>Option sans publicité prévue</li></ul>
         </div>
       </div>
@@ -162,6 +162,12 @@ FORM: Magazine du front des forteresses, quatrième structure ancrée, seed 5fb0
     </section>
   </main>
 
-  <footer class="landing-footer"><p>© 2026 Siege Winds · Aperçu de développement</p></footer>
+  <footer class="landing-footer">
+    <p>© 2026 Siege Winds · Aperçu de développement</p>
+    <nav aria-label="Informations">
+      <a href="privacy-fr.html">Confidentialité</a>
+      <a href="support-fr.html">Assistance</a>
+    </nav>
+  </footer>
 </body>
 </html>

@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Cinzel";
-  src: url("assets/fonts/cinzel-bold.ttf") format("truetype");
+  src: url("assets/fonts/cinzel-bold.woff2") format("woff2");
   font-display: swap;
   font-style: normal;
   font-weight: 700;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Alegreya Sans";
-  src: url("assets/fonts/alegreya-sans-medium.ttf") format("truetype");
+  src: url("assets/fonts/alegreya-sans-medium.woff2") format("woff2");
   font-display: swap;
   font-style: normal;
   font-weight: 500;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "Alegreya Sans SC";
-  src: url("assets/fonts/alegreya-sans-sc-bold.ttf") format("truetype");
+  src: url("assets/fonts/alegreya-sans-sc-bold.woff2") format("woff2");
   font-display: swap;
   font-style: normal;
   font-weight: 700;
@@ -1063,6 +1063,8 @@ a:focus-visible {
   min-height: 5rem;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.25rem 2rem;
   padding: 1rem 1.5rem;
   border-block-start: 1px solid rgba(248, 244, 233, 0.12);
   background: #020608;
@@ -1073,6 +1075,26 @@ a:focus-visible {
 .landing-footer p {
   margin: 0;
   font-size: 0.76rem;
+}
+
+.landing-footer nav {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.landing-footer a {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  padding-inline: 0.65rem;
+  color: rgba(248, 244, 233, 0.72);
+  font-size: 0.76rem;
+  text-underline-offset: 0.25em;
+}
+
+.landing-footer a:hover {
+  color: var(--gold-bright);
 }
 
 @keyframes hero-breathe {
