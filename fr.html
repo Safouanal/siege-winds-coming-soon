@@ -1,200 +1,167 @@
 <!doctype html>
 <!--
-THESIS: Siege Winds se retient comme le duel d’artillerie où chaque tir rapproche physiquement la forteresse adverse de l’effondrement.
-OWN-WORLD: Montagnes lumineuses, forts de pierre, bois sombre, fer, bannières bleue/rouge, parchemin et une trajectoire d’or forgé.
-STORY: Voir le fort rival tomber tir après tir, comprendre les décisions qui ouvrent chaque brèche, découvrir le vent comme profondeur additionnelle et retenir le statut honnête « bientôt disponible ».
-FIRST VIEWPORT: Panorama plein écran de deux forts, trajectoire décisive au-dessus de la vallée, promesse de destruction et action principale ancrées en bas sans masquer les forteresses.
-FORM: Chronique du duel de forteresses, septième structure ancrée, seed c4d59c83.
+THESIS: Siege Winds porte une promesse mémorable : réussir le tir qui fait réellement tomber la forteresse adverse.
+OWN-WORLD: Nuit alpine, forts de pierre monumentaux, canons de fer, bannières bleues et rouges, barres de commandement or forgé et fumée éclairée par l’impact.
+STORY: Désirer l’impact décisif, comprendre la brèche, maîtriser les trois décisions du tir, choisir un duel, bâtir son arsenal, croire à la promesse de fair-play et retenir le statut honnête « bientôt disponible ».
+FIRST VIEWPORT: Barre de commandement noire fixe, illustration d’impact originale plein écran, promesse monumentale de destruction, une action dorée et statut iOS/Android immédiatement visible.
+FORM: Magazine du front des forteresses, quatrième structure ancrée, seed 5fb05b3d.
 -->
 <html lang="fr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow, noarchive">
-  <meta name="description" content="Siege Winds est un jeu de duels d’artillerie tactiques bientôt disponible sur iOS et Android. Vise, tire, ouvre une brèche et détruis le cœur du fort rival.">
+  <meta name="description" content="Siege Winds est un jeu d’artillerie tactique bientôt disponible sur iOS et Android. Vise, tire, ouvre une brèche et détruis le cœur du fort rival.">
   <link rel="canonical" href="https://siegewinds.com/fr.html">
   <link rel="alternate" hreflang="en" href="https://siegewinds.com/">
   <link rel="alternate" hreflang="fr" href="https://siegewinds.com/fr.html">
   <link rel="alternate" hreflang="ar" href="https://siegewinds.com/ar.html">
   <link rel="alternate" hreflang="x-default" href="https://siegewinds.com/">
   <link rel="icon" href="assets/images/app-icon-256.png" type="image/png">
-  <link rel="preload" href="assets/images/hero-battlefield.jpg" as="image">
+  <link rel="preload" href="assets/images/hero-siege-impact-wide.webp" as="image" media="(min-width: 721px)">
+  <link rel="preload" href="assets/images/hero-siege-impact-mobile.webp" as="image" media="(max-width: 720px)">
   <link rel="stylesheet" href="landing.css">
-  <title>Siege Winds — Duels d’artillerie tactiques · Bientôt disponible</title>
+  <title>Siege Winds — Fais tomber le fort rival · Bientôt disponible</title>
 </head>
 <body class="landing-page">
-  <a class="skip-link" href="#main-content">Aller au champ de bataille</a>
+  <a class="skip-link" href="#main-content">Aller au siège</a>
 
-  <header class="landing-header">
-    <a class="brand-lockup" href="fr.html" aria-label="Accueil Siege Winds">
-      <img src="assets/images/app-icon-256.png" width="256" height="256" alt="">
-      <span>Siege Winds</span>
-    </a>
-    <nav class="language-nav" aria-label="Langue">
-      <a href="index.html" lang="en">EN</a>
-      <a href="fr.html" lang="fr" aria-current="page">FR</a>
-      <a href="ar.html" lang="ar" hreflang="ar">ع</a>
-    </nav>
+  <header class="campaign-header">
+    <div class="campaign-header__inner">
+      <a class="brand-lockup" href="fr.html" aria-label="Accueil Siege Winds">
+        <img src="assets/images/app-icon-256.png" width="256" height="256" alt="">
+        <span>Siege Winds</span>
+      </a>
+      <nav class="campaign-nav" aria-label="Navigation principale">
+        <a href="#gameplay">Gameplay</a>
+        <a href="#modes">Modes</a>
+        <a href="#arsenal">Arsenal</a>
+        <a href="#fair-play">Fair-play</a>
+      </nav>
+      <div class="header-actions">
+        <nav class="language-nav" aria-label="Langue">
+          <a href="index.html" lang="en">EN</a>
+          <a href="fr.html" lang="fr" aria-current="page">FR</a>
+          <a href="ar.html" lang="ar" hreflang="ar">ع</a>
+        </nav>
+        <a class="header-status" href="#coming-soon">Bientôt disponible</a>
+      </div>
+    </div>
   </header>
 
   <main id="main-content">
     <section class="landing-hero" aria-labelledby="hero-title">
-      <img class="landing-hero__art" src="assets/images/hero-battlefield.jpg" width="1024" height="500" alt="Deux forts de pierre et leurs canons se font face au-dessus d’une vallée alpine traversée par une rivière.">
-      <svg class="trajectory" viewBox="0 0 1200 450" aria-hidden="true" focusable="false">
-        <path class="trajectory__shadow" d="M78 382 Q600 -15 1122 380"></path>
-        <path class="trajectory__line" d="M78 382 Q600 -15 1122 380"></path>
-        <circle class="trajectory__shot" cx="602" cy="185" r="10"></circle>
-      </svg>
+      <picture class="landing-hero__media">
+        <source media="(max-width: 720px)" srcset="assets/images/hero-siege-impact-mobile.webp">
+        <img class="landing-hero__art" src="assets/images/hero-siege-impact-wide.webp" width="1672" height="941" alt="Un fort bleu tire à travers une vallée alpine tandis qu’un impact décisif fait exploser le fort rouge rival.">
+      </picture>
       <div class="landing-hero__content">
-        <p class="release-status">Bientôt sur iOS et Android</p>
-        <h1 id="hero-title">Vise juste. <span>Fais tomber le fort.</span></h1>
-        <p class="landing-hero__lead">
-          Des duels d’artillerie tactiques où chaque impact transforme la
-          forteresse adverse — le dernier fort debout l’emporte.
-        </p>
+        <p class="campaign-kicker">Duels d’artillerie entre forteresses</p>
+        <p class="hero-wordmark">Siege Winds</p>
+        <h1 id="hero-title">Fais tomber le <span>fort rival.</span></h1>
+        <p class="landing-hero__lead">Vise. Tire. Ouvre la brèche. Chaque impact redessine le fort jusqu’à exposer son cœur.</p>
         <div class="hero-actions">
-          <a class="siege-button" href="#siege-goal">Voir le siège en action</a>
-          <span class="platform-note">Solo · 1v1 local · Duels asynchrones prévus pour la sortie</span>
+          <a class="campaign-button" href="#duel">Voir le siège <span aria-hidden="true">↘</span></a>
+          <div class="release-lockup"><strong>Bientôt disponible</strong><span>iOS et Android</span></div>
         </div>
+        <p class="platform-note">Solo · 1v1 local · Compétition asynchrone prévue pour la sortie</p>
       </div>
+      <p class="hero-caption" aria-hidden="true">Un seul tir peut changer tout le champ de bataille.</p>
     </section>
 
-    <section class="impact-section" id="siege-goal" aria-labelledby="impact-title">
+    <div class="command-strip" aria-label="Les quatre étapes d’un tir">
+      <span>Vise le point faible</span><i aria-hidden="true">◆</i>
+      <span>Règle ton tir</span><i aria-hidden="true">◆</i>
+      <span>Brise le mur</span><i aria-hidden="true">◆</i>
+      <span>Atteins le cœur</span>
+    </div>
+
+    <section class="impact-section" id="duel" aria-labelledby="impact-title">
       <div class="impact-visual">
-        <img src="assets/images/topple-the-keep.jpg" width="1080" height="1920" loading="lazy" alt="Capture réelle d’une victoire dans Siege Winds montrant le fort rival effondré après l’impact.">
+        <p class="visual-stamp">Capture réelle · Build en développement</p>
+        <img src="assets/images/topple-the-keep.jpg" width="1080" height="1920" loading="lazy" alt="Capture de victoire dans Siege Winds montrant le fort rival effondré après l’impact.">
       </div>
       <div class="impact-copy">
-        <h2 id="impact-title">Fais tomber le fort adverse.</h2>
-        <p>
-          Fissure la pierre, brise les appuis et ouvre une voie vers le cœur. Le
-          champ de bataille change à chaque impact : chaque brèche prépare le tir suivant.
-        </p>
-        <p class="impact-verdict">
-          <strong>Vise. Tire. Ouvre la brèche.</strong>
-          <span>Détruis le cœur exposé avant que ton adversaire n’atteigne le tien.</span>
-        </p>
+        <p class="section-index">01 / L’objectif</p>
+        <h2 id="impact-title">Un seul but.<br><span>Le faire tomber.</span></h2>
+        <p>Fissure la pierre. Brise les appuis. Ouvre une voie vers le cœur. Le terrain garde la trace de chaque impact : chaque brèche crée l’occasion suivante.</p>
+        <p class="localization-note">Les captures présentent le build anglais actuellement en développement.</p>
+        <div class="impact-verdict"><strong>Vise. Tire. Ouvre la brèche.</strong><span>Détruis le cœur exposé avant que ton rival n’atteigne le tien.</span></div>
       </div>
     </section>
 
-    <section class="field-report" id="field-report" aria-labelledby="decision-title">
+    <section class="field-report" id="gameplay" aria-labelledby="decision-title">
+      <svg class="story-trajectory" viewBox="0 0 1200 520" aria-hidden="true" focusable="false">
+        <path d="M35 452 C260 410 315 110 575 128 S880 390 1165 86"></path><circle cx="35" cy="452" r="8"></circle><circle cx="575" cy="128" r="8"></circle><circle class="impact-ring" cx="1165" cy="86" r="22"></circle>
+      </svg>
       <div class="mechanic-layout">
-        <figure class="phone-proof">
-          <img src="assets/images/master-the-wind.jpg" width="1080" height="1920" loading="lazy" alt="Capture réelle de Siege Winds montrant deux forts, l’indicateur de vent et les commandes de visée.">
-        </figure>
         <div class="section-copy">
-          <h2 id="decision-title">Gagne avec le meilleur tir.</h2>
-          <p>
-            Choisis où le fort doit céder, règle ton tir, puis regarde la
-            physique transformer ta décision en véritable brèche.
-          </p>
-          <p class="localization-note">Les captures montrent l’aperçu anglais actuellement en développement.</p>
+          <p class="section-index">02 / Construis ton tir</p>
+          <h2 id="decision-title">Chaque tir<br><span>change le fort.</span></h2>
+          <p class="section-lead">Choisis où la forteresse doit céder. Puis transforme cette décision en véritable brèche.</p>
           <div class="decision-list">
-            <article class="decision">
-              <span class="decision__mark" aria-hidden="true">I</span>
-              <div>
-                <h3>Choisis le point faible</h3>
-                <p>Vise un appui, un passage exposé ou le cœur derrière la pierre.</p>
-              </div>
-            </article>
-            <article class="decision">
-              <span class="decision__mark" aria-hidden="true">II</span>
-              <div>
-                <h3>Règle l’angle et la puissance</h3>
-                <p>Franchis le terrain et frappe la structure là où l’impact compte vraiment.</p>
-              </div>
-            </article>
-            <article class="decision">
-              <span class="decision__mark" aria-hidden="true">III</span>
-              <div>
-                <h3>Tiens compte du vent</h3>
-                <p>Le vent courbe la trajectoire. Affine ton tir, engage-le, puis fais feu.</p>
-              </div>
-            </article>
+            <article class="decision"><span class="decision__mark" aria-hidden="true">01</span><div><h3>Choisis le point faible</h3><p>Vise un appui, un passage exposé ou le cœur derrière la pierre.</p></div></article>
+            <article class="decision"><span class="decision__mark" aria-hidden="true">02</span><div><h3>Règle l’angle et la puissance</h3><p>Franchis le terrain et frappe la structure là où l’impact compte vraiment.</p></div></article>
+            <article class="decision"><span class="decision__mark" aria-hidden="true">03</span><div><h3>Tiens compte du vent</h3><p>Le vent courbe la trajectoire. Lis-le, affine ton tir, puis engage-toi.</p></div></article>
           </div>
+        </div>
+        <figure class="phone-proof">
+          <span class="proof-label">Le champ de bataille répond à chaque décision</span>
+          <img src="assets/images/master-the-wind.jpg" width="1080" height="1920" loading="lazy" alt="Capture mobile de Siege Winds montrant deux forts, l’indicateur de vent et les commandes de visée.">
+        </figure>
+      </div>
+    </section>
+
+    <section class="modes-section" id="modes" aria-labelledby="modes-title">
+      <div class="modes-intro">
+        <p class="section-index">03 / Choisis le combat</p>
+        <h2 id="modes-title">Choisis ton <span>duel.</span></h2>
+        <p>Quatre façons de jouer resserrées sont prévues pour la sortie. Les services en ligne ne sont pas encore ouverts au public.</p>
+      </div>
+      <div class="battle-lines">
+        <article class="battle-line"><span class="battle-line__number">01</span><h3>Solo contre l’IA</h3><p>Des batailles hors ligne rapides, avec des adversaires lisibles et une difficulté réglable.</p><strong>Hors ligne</strong></article>
+        <article class="battle-line"><span class="battle-line__number">02</span><h3>1v1 local</h3><p>Passe le même téléphone, transmets le tour et règle la revanche à deux.</p><strong>Même appareil</strong></article>
+        <article class="battle-line"><span class="battle-line__number">03</span><h3>Duels asynchrones</h3><p>Joue ton tir, puis reviens lorsque ton rival a répondu.</p><strong>Prévu pour la sortie</strong></article>
+        <article class="battle-line"><span class="battle-line__number">04</span><h3>Classements équitables</h3><p>Des résultats issus des matchs terminés, sans puissance de classement payante.</p><strong>Prévu pour la sortie</strong></article>
+      </div>
+    </section>
+
+    <section class="arsenal-section" id="arsenal" aria-labelledby="arsenal-title">
+      <div class="arsenal-copy">
+        <p class="section-index">04 / Choisis l’outil</p>
+        <h2 id="arsenal-title">Bâtis le bon <span>arsenal.</span></h2>
+        <p>Quinze canons sont prévus pour la sortie, chacun avec une silhouette et un comportement lisibles. Débloque-les en jouant — jamais par hasard payant.</p>
+        <ul class="arsenal-facts"><li><strong>15</strong><span>canons prévus</span></li><li><strong>0</strong><span>récompense aléatoire payante</span></li></ul>
+        <p class="localization-note">Les écrans de progression présentent le build anglais actuellement en développement.</p>
+      </div>
+      <div class="arsenal-stage" aria-label="Écrans de progression du build anglais actuel de Siege Winds">
+        <img class="arsenal-stage__journey" src="assets/images/choose-your-journey.jpg" width="1080" height="1920" loading="lazy" alt="Sélection des parcours Siege Winds avec campagne, arcade, tutoriel et classement.">
+        <img class="arsenal-stage__collection" src="assets/images/build-your-arsenal.jpg" width="1080" height="1920" loading="lazy" alt="Collection de canons Siege Winds montrant plusieurs pièces d’artillerie à débloquer.">
+      </div>
+    </section>
+
+    <section class="oath-section" id="fair-play" aria-labelledby="oath-title">
+      <div class="oath">
+        <p class="section-index">05 / Notre ligne rouge</p>
+        <h2 id="oath-title">Le talent gagne.<br><span>Pas la dépense.</span></h2>
+        <div class="oath-copy">
+          <p>Jeu tactique propre, progression déterministe, monétisation compatible avec les principes halal et aucun système vendant un meilleur résultat compétitif.</p>
+          <ul class="oath-list"><li>Aucune loot box</li><li>Aucune puissance payante</li><li>Aucun pari</li><li>Option sans publicité prévue</li></ul>
         </div>
       </div>
     </section>
 
-    <section class="modes-section" aria-labelledby="modes-title">
-      <div class="modes-intro">
-        <h2 id="modes-title">Choisis ton duel.</h2>
-        <p>
-          Siege Winds est conçu comme un jeu mobile complet mais resserré. Ces
-          modes sont prévus pour la sortie ; les services en ligne ne sont pas
-          encore ouverts au public.
-        </p>
-      </div>
-      <div class="battle-lines">
-        <article class="battle-line">
-          <h3>Solo contre l’IA</h3>
-          <p>Des batailles hors ligne rapides, avec des adversaires lisibles et une difficulté réglable.</p>
-          <span>Hors ligne</span>
-        </article>
-        <article class="battle-line">
-          <h3>1v1 local</h3>
-          <p>Passe le même téléphone, transmets le tour et règle la revanche à deux.</p>
-          <span>Même appareil</span>
-        </article>
-        <article class="battle-line">
-          <h3>Duels asynchrones</h3>
-          <p>Joue ton tir, vaque à tes occupations et reviens quand ton rival a répondu.</p>
-          <span>Prévu pour la sortie</span>
-        </article>
-        <article class="battle-line">
-          <h3>Classements équitables</h3>
-          <p>Des résultats compétitifs issus des matchs async terminés, sans avantage de classement payant.</p>
-          <span>Prévu pour la sortie</span>
-        </article>
-      </div>
-    </section>
-
-    <section class="arsenal-section" aria-labelledby="arsenal-title">
-      <div class="arsenal-copy">
-        <h2 id="arsenal-title">Quinze canons. <strong>Zéro hasard payant.</strong></h2>
-        <p>
-          Construis ton arsenal grâce à des victoires claires, aux chapitres de
-          campagne et à la maîtrise. Chaque canon possède une silhouette et un
-          comportement lisibles ; le classement reste sans avantage payant.
-        </p>
-      </div>
-      <div class="arsenal-stage" aria-label="Écrans réels de progression de Siege Winds">
-        <img src="assets/images/choose-your-journey.jpg" width="1080" height="1920" loading="lazy" alt="Sélection des parcours Siege Winds avec campagne, arcade, tutoriel et classement.">
-        <img src="assets/images/build-your-arsenal.jpg" width="1080" height="1920" loading="lazy" alt="Collection de canons Siege Winds montrant plusieurs pièces d’artillerie à débloquer.">
-      </div>
-    </section>
-
-    <section class="oath-section" aria-labelledby="oath-title">
-      <div class="oath">
-        <h2 id="oath-title">Le talent d’abord. Toujours.</h2>
-        <p>
-          Siege Winds est conçu pour mériter ta confiance : jeu tactique propre,
-          progression déterministe, monétisation halal-friendly et aucun système
-          vendant un meilleur résultat compétitif.
-        </p>
-        <ul class="oath-list">
-          <li>Aucune loot box</li>
-          <li>Aucune puissance payante</li>
-          <li>Aucun pari</li>
-          <li>Option sans publicité prévue</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="final-call" aria-labelledby="final-title">
+    <section class="final-call" id="coming-soon" aria-labelledby="final-title">
+      <img src="assets/images/hero-siege-impact-wide.webp" width="1672" height="941" loading="lazy" alt="" aria-hidden="true">
       <div class="final-call__inner">
-        <h2 id="final-title">Le prochain tir se rapproche.</h2>
-        <p>
-          Siege Winds est en développement pour iPhone et Android. Les liens
-          Store et la date de sortie apparaîtront ici uniquement lorsqu’ils
-          seront réels.
-        </p>
+        <p class="section-index">La prochaine bataille</p>
+        <h2 id="final-title">Le prochain siège<br><span>se prépare.</span></h2>
+        <p>Siege Winds est en développement pour iPhone et Android. Les liens Store et la date de sortie apparaîtront ici uniquement lorsqu’ils seront réels.</p>
         <span class="final-status">Bientôt disponible · iOS et Android</span>
       </div>
     </section>
   </main>
 
-  <footer class="landing-footer">
-    <p>© 2026 Siege Winds · Aperçu de développement</p>
-  </footer>
+  <footer class="landing-footer"><p>© 2026 Siege Winds · Aperçu de développement</p></footer>
 </body>
 </html>

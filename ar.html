@@ -1,195 +1,158 @@
 <!doctype html>
 <!--
-THESIS: يُذكر Siege Winds كمبارزة مدفعية تجعل كل طلقة حصن الخصم أقرب فعليًا إلى الانهيار.
-OWN-WORLD: جبال مضيئة، حصون حجرية، خشب داكن وحديد، رايات زرقاء وحمراء، رقّ، ومسار واحد بلون الذهب المصهور.
-STORY: يرى الزائر حصن الخصم يسقط طلقة بعد أخرى، ويفهم قرارات التصويب التي تفتح كل ثغرة، ثم يكتشف الريح كعمق إضافي ويتذكر بوضوح أن اللعبة قادمة قريبًا.
-FIRST VIEWPORT: مشهد كامل لحصنين، مسار حاسم فوق الوادي، ووعد بإسقاط الحصن مع رابط الحصار في الأسفل من دون حجب القلعتين.
-FORM: سجل مبارزة الحصون، البنية الواقعية السابعة، seed c4d59c83.
+THESIS: تقدم Siege Winds وعدًا واحدًا لا يُنسى: تنفيذ الطلقة التي تُسقط حصن الخصم فعليًا.
+OWN-WORLD: ليل جبلي، حصون حجرية ضخمة، مدافع حديدية، رايات زرقاء وحمراء، شرائط قيادة بلون الذهب المصهور، ودخان تضيئه الضربة.
+STORY: الرغبة في الضربة الحاسمة، فهم الثغرة، اتخاذ قرارات الطلقة الثلاثة، اختيار المبارزة، بناء الترسانة، الثقة بوعد اللعب العادل، ثم تذكّر حالة «قريبًا» الصادقة.
+FIRST VIEWPORT: شريط قيادة أسود ثابت، لوحة أصلية للضربة بملء الشاشة، وعد ضخم بإسقاط الحصن، إجراء ذهبي واحد، وحالة iOS وAndroid ظاهرة مباشرة.
+FORM: مجلة جبهة الحصون، البنية الواقعية الرابعة، seed 5fb05b3d.
 -->
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow, noarchive">
-  <meta name="description" content="Siege Winds لعبة مبارزات مدفعية تكتيكية قادمة قريبًا إلى iOS وAndroid. سدّد، أطلق، افتح ثغرة ودمّر قلب حصن خصمك.">
+  <meta name="description" content="Siege Winds لعبة مدفعية تكتيكية قادمة قريبًا إلى iOS وAndroid. سدّد، أطلق، افتح ثغرة ودمّر قلب حصن خصمك.">
   <link rel="canonical" href="https://siegewinds.com/ar.html">
   <link rel="alternate" hreflang="en" href="https://siegewinds.com/">
   <link rel="alternate" hreflang="fr" href="https://siegewinds.com/fr.html">
   <link rel="alternate" hreflang="ar" href="https://siegewinds.com/ar.html">
   <link rel="alternate" hreflang="x-default" href="https://siegewinds.com/">
   <link rel="icon" href="assets/images/app-icon-256.png" type="image/png">
-  <link rel="preload" href="assets/images/hero-battlefield.jpg" as="image">
+  <link rel="preload" href="assets/images/hero-siege-impact-wide.webp" as="image" media="(min-width: 721px)">
+  <link rel="preload" href="assets/images/hero-siege-impact-mobile.webp" as="image" media="(max-width: 720px)">
   <link rel="stylesheet" href="landing.css">
-  <title>Siege Winds — مبارزات مدفعية تكتيكية · قريبًا</title>
+  <title>Siege Winds — أسقط حصن خصمك · قريبًا</title>
 </head>
 <body class="landing-page" dir="rtl">
-  <a class="skip-link" href="#main-content">انتقل إلى ساحة المعركة</a>
+  <a class="skip-link" href="#main-content">انتقل إلى الحصار</a>
 
-  <header class="landing-header">
-    <a class="brand-lockup" href="ar.html" aria-label="الصفحة الرئيسية لـ Siege Winds">
-      <img src="assets/images/app-icon-256.png" width="256" height="256" alt="">
-      <span>Siege Winds</span>
-    </a>
-    <nav class="language-nav" aria-label="اللغة">
-      <a href="index.html" lang="en">EN</a>
-      <a href="fr.html" lang="fr">FR</a>
-      <a href="ar.html" lang="ar" aria-current="page">ع</a>
-    </nav>
+  <header class="campaign-header">
+    <div class="campaign-header__inner">
+      <a class="brand-lockup" href="ar.html" aria-label="الصفحة الرئيسية لـ Siege Winds">
+        <img src="assets/images/app-icon-256.png" width="256" height="256" alt=""><span>Siege Winds</span>
+      </a>
+      <nav class="campaign-nav" aria-label="التنقل الرئيسي">
+        <a href="#gameplay">أسلوب اللعب</a><a href="#modes">الأنماط</a><a href="#arsenal">الترسانة</a><a href="#fair-play">اللعب العادل</a>
+      </nav>
+      <div class="header-actions">
+        <nav class="language-nav" aria-label="اللغة">
+          <a href="index.html" lang="en">EN</a><a href="fr.html" lang="fr">FR</a><a href="ar.html" lang="ar" aria-current="page">ع</a>
+        </nav>
+        <a class="header-status" href="#coming-soon">قريبًا</a>
+      </div>
+    </div>
   </header>
 
   <main id="main-content">
     <section class="landing-hero" aria-labelledby="hero-title">
-      <img class="landing-hero__art" src="assets/images/hero-battlefield.jpg" width="1024" height="500" alt="حصنان حجريان ومدفعاهما يتواجهان فوق وادٍ جبلي تعبره مياه النهر.">
-      <svg class="trajectory" viewBox="0 0 1200 450" aria-hidden="true" focusable="false">
-        <path class="trajectory__shadow" d="M78 382 Q600 -15 1122 380"></path>
-        <path class="trajectory__line" d="M78 382 Q600 -15 1122 380"></path>
-        <circle class="trajectory__shot" cx="602" cy="185" r="10"></circle>
-      </svg>
+      <picture class="landing-hero__media">
+        <source media="(max-width: 720px)" srcset="assets/images/hero-siege-impact-mobile.webp">
+        <img class="landing-hero__art" src="assets/images/hero-siege-impact-wide.webp" width="1672" height="941" alt="حصن حجري أزرق يطلق النار عبر وادٍ جبلي بينما تنفجر ضربة حاسمة في الحصن الأحمر المنافس.">
+      </picture>
       <div class="landing-hero__content">
-        <p class="release-status">قريبًا على آيفون وأندرويد</p>
-        <h1 id="hero-title">سدّد بدقة. <span>وأسقط الحصن.</span></h1>
-        <p class="landing-hero__lead">
-          مبارزات مدفعية تكتيكية تغيّر فيها كل إصابة حصن الخصم، ويفوز آخر حصن صامد.
-        </p>
+        <p class="campaign-kicker">مبارزات مدفعية بين الحصون</p>
+        <p class="hero-wordmark" dir="ltr">Siege Winds</p>
+        <h1 id="hero-title">أسقط <span>حصن خصمك.</span></h1>
+        <p class="landing-hero__lead">سدّد. أطلق. افتح الثغرة. كل إصابة تعيد تشكيل الحصن حتى ينكشف قلبه.</p>
         <div class="hero-actions">
-          <a class="siege-button" href="#siege-goal">شاهد الحصار</a>
-          <span class="platform-note">فردي · لاعب ضد لاعب محلي · مبارزات غير متزامنة مخطط لها عند الإطلاق</span>
+          <a class="campaign-button" href="#duel">ادخل الحصار <span aria-hidden="true">↙</span></a>
+          <div class="release-lockup"><strong>قريبًا</strong><span><bdi dir="ltr">iOS / Android</bdi></span></div>
         </div>
+        <p class="platform-note">فردي · لاعب ضد لاعب محلي · منافسات غير متزامنة مخطط لها عند الإطلاق</p>
       </div>
+      <p class="hero-caption" aria-hidden="true">طلقة واحدة قد تغيّر ساحة المعركة كلها.</p>
     </section>
 
-    <section class="impact-section" id="siege-goal" aria-labelledby="impact-title">
+    <div class="command-strip" aria-label="المراحل الأربع للطلقة">
+      <span>استهدف نقطة الضعف</span><i aria-hidden="true">◆</i><span>اضبط الطلقة</span><i aria-hidden="true">◆</i><span>حطّم الجدار</span><i aria-hidden="true">◆</i><span>بلغ القلب</span>
+    </div>
+
+    <section class="impact-section" id="duel" aria-labelledby="impact-title">
       <div class="impact-visual">
-        <img src="assets/images/topple-the-keep.jpg" width="1080" height="1920" loading="lazy" alt="لقطة نصر حقيقية من Siege Winds تُظهر حصن الخصم منهارًا بعد الضربة.">
+        <p class="visual-stamp">لقطة حقيقية · نسخة قيد التطوير</p>
+        <img src="assets/images/topple-the-keep.jpg" width="1080" height="1920" loading="lazy" alt="لقطة نصر من Siege Winds تُظهر حصن الخصم منهارًا بعد الضربة.">
       </div>
       <div class="impact-copy">
-        <h2 id="impact-title">أسقط حصن خصمك.</h2>
-        <p>
-          شق الحجر، وحطّم الدعامات، وافتح طريقًا إلى القلب. تتغيّر ساحة المعركة
-          مع كل إصابة، فكل ثغرة تمهّد للطلقة التالية.
-        </p>
-        <p class="impact-verdict">
-          <strong>سدّد. أطلق. افتح الثغرة.</strong>
-          <span>دمّر القلب المكشوف قبل أن يصل خصمك إلى قلب حصنك.</span>
-        </p>
+        <p class="section-index">01 / الهدف</p>
+        <h2 id="impact-title">هدف واحد.<br><span>أسقطه.</span></h2>
+        <p>شق الحجر. حطّم الدعامات. افتح طريقًا إلى القلب. تحتفظ الساحة بأثر كل إصابة، لذلك تصنع كل ثغرة فرصتك التالية.</p>
+        <p class="localization-note">تعرض الصور النسخة الإنجليزية الجاري تطويرها حاليًا.</p>
+        <div class="impact-verdict"><strong>سدّد. أطلق. افتح الثغرة.</strong><span>دمّر القلب المكشوف قبل أن يصل خصمك إلى قلب حصنك.</span></div>
       </div>
     </section>
 
-    <section class="field-report" id="field-report" aria-labelledby="decision-title">
+    <section class="field-report" id="gameplay" aria-labelledby="decision-title">
+      <svg class="story-trajectory" viewBox="0 0 1200 520" aria-hidden="true" focusable="false">
+        <path d="M35 452 C260 410 315 110 575 128 S880 390 1165 86"></path><circle cx="35" cy="452" r="8"></circle><circle cx="575" cy="128" r="8"></circle><circle class="impact-ring" cx="1165" cy="86" r="22"></circle>
+      </svg>
       <div class="mechanic-layout">
-        <figure class="phone-proof">
-          <img src="assets/images/master-the-wind.jpg" width="1080" height="1920" loading="lazy" alt="لقطة حقيقية من Siege Winds تعرض حصنين ومؤشر الريح وأدوات التصويب.">
-        </figure>
         <div class="section-copy">
-          <h2 id="decision-title">احسم المعركة بالطلقة الأفضل.</h2>
-          <p>
-            اختر موضع انهيار الحصن، واضبط طلقتك، ثم شاهد الفيزياء تحوّل قرارك
-            إلى ثغرة حقيقية.
-          </p>
-          <p class="localization-note">تعرض الصور نسخة المعاينة الإنجليزية الجاري تطويرها حاليًا.</p>
+          <p class="section-index">02 / اصنع الطلقة</p>
+          <h2 id="decision-title">كل طلقة<br><span>تغيّر الحصن.</span></h2>
+          <p class="section-lead">اختر موضع انهيار الحصن، ثم حوّل قرارك إلى ثغرة حقيقية.</p>
           <div class="decision-list">
-            <article class="decision">
-              <span class="decision__mark" aria-hidden="true">١</span>
-              <div>
-                <h3>اختر نقطة الضعف</h3>
-                <p>استهدف دعامة، أو مسارًا مكشوفًا، أو القلب خلف الحجر.</p>
-              </div>
-            </article>
-            <article class="decision">
-              <span class="decision__mark" aria-hidden="true">٢</span>
-              <div>
-                <h3>اضبط الزاوية والقوة</h3>
-                <p>تجاوز التضاريس واضرب البناء في الموضع الأكثر تأثيرًا.</p>
-              </div>
-            </article>
-            <article class="decision">
-              <span class="decision__mark" aria-hidden="true">٣</span>
-              <div>
-                <h3>ضع الريح في حسابك</h3>
-                <p>تحني الريح المسار. حسّن طلقتك، ثم ثبّت قرارك وأطلق.</p>
-              </div>
-            </article>
+            <article class="decision"><span class="decision__mark" aria-hidden="true">01</span><div><h3>اختر نقطة الضعف</h3><p>استهدف دعامة، أو طريقًا مكشوفًا، أو القلب خلف الحجر.</p></div></article>
+            <article class="decision"><span class="decision__mark" aria-hidden="true">02</span><div><h3>اضبط الزاوية والقوة</h3><p>تجاوز التضاريس واضرب البناء في الموضع الأكثر تأثيرًا.</p></div></article>
+            <article class="decision"><span class="decision__mark" aria-hidden="true">03</span><div><h3>ضع الريح في حسابك</h3><p>تحني الريح المسار. اقرأها، حسّن الطلقة، ثم ثبّت قرارك وأطلق.</p></div></article>
           </div>
+        </div>
+        <figure class="phone-proof">
+          <span class="proof-label">ساحة المعركة تستجيب لكل قرار</span>
+          <img src="assets/images/master-the-wind.jpg" width="1080" height="1920" loading="lazy" alt="لقطة من Siege Winds تعرض حصنين ومؤشر الريح وأدوات التصويب.">
+        </figure>
+      </div>
+    </section>
+
+    <section class="modes-section" id="modes" aria-labelledby="modes-title">
+      <div class="modes-intro">
+        <p class="section-index">03 / اختر المعركة</p>
+        <h2 id="modes-title">اختر <span>مبارزتك.</span></h2>
+        <p>أربعة أساليب لعب مركزة مخطط لها عند الإطلاق. الخدمات عبر الإنترنت ليست متاحة للعامة بعد.</p>
+      </div>
+      <div class="battle-lines">
+        <article class="battle-line"><span class="battle-line__number">01</span><h3>فردي ضد الذكاء الاصطناعي</h3><p>معارك سريعة بلا اتصال، مع خصوم مفهومين وصعوبة قابلة للتعديل.</p><strong>بلا اتصال</strong></article>
+        <article class="battle-line"><span class="battle-line__number">02</span><h3>لاعب ضد لاعب محلي</h3><p>مرّر الهاتف نفسه، وسلّم الدور، ثم احسم جولة الإعادة معًا.</p><strong>الجهاز نفسه</strong></article>
+        <article class="battle-line"><span class="battle-line__number">03</span><h3>مبارزات غير متزامنة</h3><p>نفّذ طلقتك، ثم عد عندما يجيب خصمك.</p><strong>مخطط عند الإطلاق</strong></article>
+        <article class="battle-line"><span class="battle-line__number">04</span><h3>تصنيفات عادلة</h3><p>نتائج تنافسية من المباريات المكتملة، بلا قوة تصنيف مدفوعة.</p><strong>مخطط عند الإطلاق</strong></article>
+      </div>
+    </section>
+
+    <section class="arsenal-section" id="arsenal" aria-labelledby="arsenal-title">
+      <div class="arsenal-copy">
+        <p class="section-index">04 / اختر الأداة</p>
+        <h2 id="arsenal-title">ابنِ الترسانة <span>المناسبة.</span></h2>
+        <p>خمسة عشر مدفعًا مخطط لها عند الإطلاق، لكل منها شكل وطريقة تحكم واضحان. افتحها باللعب الواضح، لا بالحظ المدفوع.</p>
+        <ul class="arsenal-facts"><li><strong>15</strong><span>مدفعًا مخططًا</span></li><li><strong>0</strong><span>مكافآت عشوائية مدفوعة</span></li></ul>
+        <p class="localization-note">تعرض شاشات التقدم النسخة الإنجليزية الجاري تطويرها حاليًا.</p>
+      </div>
+      <div class="arsenal-stage" aria-label="شاشات التقدم من النسخة الإنجليزية الحالية من Siege Winds">
+        <img class="arsenal-stage__journey" src="assets/images/choose-your-journey.jpg" width="1080" height="1920" loading="lazy" alt="شاشة اختيار المسار في Siege Winds وتعرض الحملة والأركيد والتدريب والتصنيف.">
+        <img class="arsenal-stage__collection" src="assets/images/build-your-arsenal.jpg" width="1080" height="1920" loading="lazy" alt="مجموعة مدافع Siege Winds وتعرض عدة قطع مدفعية قابلة للفتح.">
+      </div>
+    </section>
+
+    <section class="oath-section" id="fair-play" aria-labelledby="oath-title">
+      <div class="oath">
+        <p class="section-index">05 / المبدأ الذي نحميه</p>
+        <h2 id="oath-title">المهارة تفوز.<br><span>لا الإنفاق.</span></h2>
+        <div class="oath-copy">
+          <p>لعب تكتيكي نظيف، وتقدم حتمي، وتحقيق دخل متوافق مع الحلال، ومن دون أي نظام يبيع نتيجة تنافسية أفضل.</p>
+          <ul class="oath-list"><li>لا صناديق غنائم</li><li>لا قوة مدفوعة</li><li>لا رهانات</li><li>خيار بلا إعلانات مخطط له</li></ul>
         </div>
       </div>
     </section>
 
-    <section class="modes-section" aria-labelledby="modes-title">
-      <div class="modes-intro">
-        <h2 id="modes-title">اختر مبارزتك.</h2>
-        <p>
-          تُبنى Siege Winds كلعبة هاتف كاملة ومركّزة. هذه الأنماط مخطط لها عند
-          الإطلاق؛ الخدمات عبر الإنترنت ليست متاحة للعامة بعد.
-        </p>
-      </div>
-      <div class="battle-lines">
-        <article class="battle-line">
-          <h3>فردي ضد الذكاء الاصطناعي</h3>
-          <p>معارك سريعة بلا اتصال، مع خصوم يمكن فهمهم ومستوى صعوبة قابل للتعديل.</p>
-          <span>بلا اتصال</span>
-        </article>
-        <article class="battle-line">
-          <h3>لاعب ضد لاعب محلي</h3>
-          <p>مرّر الهاتف نفسه، وسلّم الدور، ثم احسم جولة الإعادة معًا.</p>
-          <span>على الجهاز نفسه</span>
-        </article>
-        <article class="battle-line">
-          <h3>مبارزات غير متزامنة</h3>
-          <p>نفّذ طلقتك، ثم عد عندما يجيب خصمك بطلقة جديدة.</p>
-          <span>مخطط عند الإطلاق</span>
-        </article>
-        <article class="battle-line">
-          <h3>تصنيف عادل</h3>
-          <p>نتائج تنافسية من المباريات غير المتزامنة المكتملة، بلا قوة مدفوعة في التصنيف.</p>
-          <span>مخطط عند الإطلاق</span>
-        </article>
-      </div>
-    </section>
-
-    <section class="arsenal-section" aria-labelledby="arsenal-title">
-      <div class="arsenal-copy">
-        <h2 id="arsenal-title">خمسة عشر مدفعًا. <strong>صفر حظ مدفوع.</strong></h2>
-        <p>
-          ابنِ ترسانتك عبر انتصارات واضحة وفصول الحملة والإتقان. لكل مدفع شكل
-          وطريقة تحكم يمكن فهمهما، وتبقى المنافسة المصنفة بلا أفضلية مدفوعة.
-        </p>
-      </div>
-      <div class="arsenal-stage" aria-label="شاشات تقدم حقيقية من Siege Winds">
-        <img src="assets/images/choose-your-journey.jpg" width="1080" height="1920" loading="lazy" alt="شاشة اختيار المسار في Siege Winds وتعرض الحملة والأركيد والتدريب والتصنيف.">
-        <img src="assets/images/build-your-arsenal.jpg" width="1080" height="1920" loading="lazy" alt="مجموعة مدافع Siege Winds وتعرض عدة قطع مدفعية قابلة للفتح.">
-      </div>
-    </section>
-
-    <section class="oath-section" aria-labelledby="oath-title">
-      <div class="oath">
-        <h2 id="oath-title">المهارة أولًا. دائمًا.</h2>
-        <p>
-          صُممت Siege Winds لتكسب الثقة: لعب تكتيكي نظيف، وتقدم حتمي، وتحقيق
-          دخل متوافق مع الحلال، ومن دون أي نظام يبيع نتيجة تنافسية أفضل.
-        </p>
-        <ul class="oath-list">
-          <li>لا صناديق غنائم</li>
-          <li>لا قوة مدفوعة</li>
-          <li>لا رهانات</li>
-          <li>خيار بلا إعلانات مخطط له</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="final-call" aria-labelledby="final-title">
+    <section class="final-call" id="coming-soon" aria-labelledby="final-title">
+      <img src="assets/images/hero-siege-impact-wide.webp" width="1672" height="941" loading="lazy" alt="" aria-hidden="true">
       <div class="final-call__inner">
-        <h2 id="final-title">الطلقة التالية تقترب.</h2>
-        <p>
-          Siege Winds قيد التطوير لهواتف آيفون وأندرويد. لن تظهر روابط المتاجر
-          أو موعد الإطلاق هنا إلا عندما تصبح حقيقية.
-        </p>
-        <span class="final-status">قريبًا · آيفون وأندرويد</span>
+        <p class="section-index">المعركة القادمة</p>
+        <h2 id="final-title">الحصار التالي<br><span>قادم.</span></h2>
+        <p>Siege Winds قيد التطوير لهواتف <bdi dir="ltr">iPhone</bdi> و<bdi dir="ltr">Android</bdi>. لن تظهر روابط المتاجر أو موعد الإطلاق هنا إلا عندما تصبح حقيقية.</p>
+        <span class="final-status">قريبًا · <bdi dir="ltr">iOS / Android</bdi></span>
       </div>
     </section>
   </main>
 
-  <footer class="landing-footer">
-    <p>© 2026 Siege Winds · معاينة تطوير</p>
-  </footer>
+  <footer class="landing-footer"><p>© 2026 Siege Winds · معاينة تطوير</p></footer>
 </body>
 </html>

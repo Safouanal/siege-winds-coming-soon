@@ -1,197 +1,188 @@
 <!doctype html>
 <!--
-THESIS: Siege Winds is remembered as the artillery duel where every shot physically brings a rival fortress closer to collapse.
-OWN-WORLD: Bright heroic mountains, stone keeps, dark timber and iron, blue/red banners, parchment, and one forge-gold trajectory.
-STORY: See the rival keep fall shot by shot, understand the targeting decisions behind each breach, discover wind as added depth, then remember the honest coming-soon status.
-FIRST VIEWPORT: A full-bleed two-keep panorama, decisive trajectory above the valley, fortress-destruction promise and primary siege link anchored low without obscuring either keep.
-FORM: Fortress Duel Chronicle, seventh grounded structure, seed c4d59c83.
+THESIS: Siege Winds presents one unforgettable promise: take the shot that physically brings a rival fortress down.
+OWN-WORLD: Alpine night, monumental stone keeps, iron cannonwork, blue/red war banners, forge-gold command bars, and impact-lit smoke.
+STORY: Desire the decisive hit, understand the breach, make the three shot decisions, choose a duel, build an arsenal, trust the fair-play promise, then remember the honest coming-soon status.
+FIRST VIEWPORT: A fixed black command bar above full-screen original impact art, a monumental fortress-destruction headline, one gold action, and a visible iOS/Android coming-soon status.
+FORM: Fortress Frontline Magazine, fourth grounded structure, seed 5fb05b3d.
 -->
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow, noarchive">
-  <meta name="description" content="Siege Winds is a coming-soon tactical artillery duel for iOS and Android. Aim, fire, breach the rival fortress, and destroy its core.">
+  <meta name="description" content="Siege Winds is a coming-soon tactical artillery game for iOS and Android. Aim, fire, breach the rival fortress, and destroy its core.">
   <link rel="canonical" href="https://siegewinds.com/">
   <link rel="alternate" hreflang="en" href="https://siegewinds.com/">
   <link rel="alternate" hreflang="fr" href="https://siegewinds.com/fr.html">
   <link rel="alternate" hreflang="ar" href="https://siegewinds.com/ar.html">
   <link rel="alternate" hreflang="x-default" href="https://siegewinds.com/">
   <link rel="icon" href="assets/images/app-icon-256.png" type="image/png">
-  <link rel="preload" href="assets/images/hero-battlefield.jpg" as="image">
+  <link rel="preload" href="assets/images/hero-siege-impact-wide.webp" as="image" media="(min-width: 721px)">
+  <link rel="preload" href="assets/images/hero-siege-impact-mobile.webp" as="image" media="(max-width: 720px)">
   <link rel="stylesheet" href="landing.css">
-  <title>Siege Winds — Tactical artillery duels · Coming soon</title>
+  <title>Siege Winds — Topple the rival keep · Coming soon</title>
 </head>
 <body class="landing-page">
-  <a class="skip-link" href="#main-content">Skip to the battlefield</a>
+  <a class="skip-link" href="#main-content">Skip to the siege</a>
 
-  <header class="landing-header">
-    <a class="brand-lockup" href="index.html" aria-label="Siege Winds home">
-      <img src="assets/images/app-icon-256.png" width="256" height="256" alt="">
-      <span>Siege Winds</span>
-    </a>
-    <nav class="language-nav" aria-label="Language">
-      <a href="index.html" lang="en" aria-current="page">EN</a>
-      <a href="fr.html" lang="fr">FR</a>
-      <a href="ar.html" lang="ar" hreflang="ar">ع</a>
-    </nav>
+  <header class="campaign-header">
+    <div class="campaign-header__inner">
+      <a class="brand-lockup" href="index.html" aria-label="Siege Winds home">
+        <img src="assets/images/app-icon-256.png" width="256" height="256" alt="">
+        <span>Siege Winds</span>
+      </a>
+      <nav class="campaign-nav" aria-label="Main navigation">
+        <a href="#gameplay">Gameplay</a>
+        <a href="#modes">Modes</a>
+        <a href="#arsenal">Arsenal</a>
+        <a href="#fair-play">Fair play</a>
+      </nav>
+      <div class="header-actions">
+        <nav class="language-nav" aria-label="Language">
+          <a href="index.html" lang="en" aria-current="page">EN</a>
+          <a href="fr.html" lang="fr">FR</a>
+          <a href="ar.html" lang="ar" hreflang="ar">ع</a>
+        </nav>
+        <a class="header-status" href="#coming-soon">Coming soon</a>
+      </div>
+    </div>
   </header>
 
   <main id="main-content">
     <section class="landing-hero" aria-labelledby="hero-title">
-      <img class="landing-hero__art" src="assets/images/hero-battlefield.jpg" width="1024" height="500" alt="Two stone keeps and their cannons face each other across a high alpine river valley.">
-      <svg class="trajectory" viewBox="0 0 1200 450" aria-hidden="true" focusable="false">
-        <path class="trajectory__shadow" d="M78 382 Q600 -15 1122 380"></path>
-        <path class="trajectory__line" d="M78 382 Q600 -15 1122 380"></path>
-        <circle class="trajectory__shot" cx="602" cy="185" r="10"></circle>
-      </svg>
+      <picture class="landing-hero__media">
+        <source media="(max-width: 720px)" srcset="assets/images/hero-siege-impact-mobile.webp">
+        <img class="landing-hero__art" src="assets/images/hero-siege-impact-wide.webp" width="1672" height="941" alt="A blue stone keep fires across an alpine valley as the rival red keep erupts in a decisive impact.">
+      </picture>
       <div class="landing-hero__content">
-        <p class="release-status">Coming soon to iOS &amp; Android</p>
-        <h1 id="hero-title">Take aim. <span>Topple the keep.</span></h1>
-        <p class="landing-hero__lead">
-          Short tactical artillery duels where every hit reshapes the rival
-          fortress—and the last keep standing wins.
-        </p>
+        <p class="campaign-kicker">Fortress artillery duels</p>
+        <p class="hero-wordmark">Siege Winds</p>
+        <h1 id="hero-title">Topple the <span>rival keep.</span></h1>
+        <p class="landing-hero__lead">Aim. Fire. Break through. Every hit redraws the fortress until one core is left exposed.</p>
         <div class="hero-actions">
-          <a class="siege-button" href="#siege-goal">See the siege unfold</a>
-          <span class="platform-note">Solo · Local 1v1 · Async duels planned for launch</span>
+          <a class="campaign-button" href="#duel">See the siege <span aria-hidden="true">↘</span></a>
+          <div class="release-lockup">
+            <strong>Coming soon</strong>
+            <span>iOS &amp; Android</span>
+          </div>
+        </div>
+        <p class="platform-note">Solo · Local 1v1 · Async competition planned for launch</p>
+      </div>
+      <p class="hero-caption" aria-hidden="true">One shot can change the whole battlefield.</p>
+    </section>
+
+    <div class="command-strip" aria-label="The four steps of a shot">
+      <span>Target the weak point</span><i aria-hidden="true">◆</i>
+      <span>Set the shot</span><i aria-hidden="true">◆</i>
+      <span>Break the wall</span><i aria-hidden="true">◆</i>
+      <span>Reach the core</span>
+    </div>
+
+    <section class="impact-section" id="duel" aria-labelledby="impact-title">
+      <div class="impact-visual">
+        <p class="visual-stamp">Real in-game capture · Development build</p>
+        <img src="assets/images/topple-the-keep.jpg" width="1080" height="1920" loading="lazy" alt="A Siege Winds victory capture showing the rival stone keep collapsed after impact.">
+      </div>
+      <div class="impact-copy">
+        <p class="section-index">01 / The objective</p>
+        <h2 id="impact-title">One goal.<br><span>Bring it down.</span></h2>
+        <p>Crack stone. Break supports. Open a route to the core. The battlefield keeps the scars of every hit, so each breach creates the next opportunity.</p>
+        <div class="impact-verdict">
+          <strong>Aim. Fire. Break through.</strong>
+          <span>Destroy the exposed core before your rival reaches yours.</span>
         </div>
       </div>
     </section>
 
-    <section class="impact-section" id="siege-goal" aria-labelledby="impact-title">
-      <div class="impact-visual">
-        <img src="assets/images/topple-the-keep.jpg" width="1080" height="1920" loading="lazy" alt="A real Siege Winds victory capture showing the rival stone keep collapsed after impact.">
-      </div>
-      <div class="impact-copy">
-        <h2 id="impact-title">Bring the rival keep down.</h2>
-        <p>
-          Crack stone, break supports, and open a route to the core. The
-          battlefield changes with every hit, so each breach sets up the next shot.
-        </p>
-        <p class="impact-verdict">
-          <strong>Aim. Fire. Break through.</strong>
-          <span>Destroy the exposed core before your rival reaches yours.</span>
-        </p>
-      </div>
-    </section>
-
-    <section class="field-report" id="field-report" aria-labelledby="decision-title">
+    <section class="field-report" id="gameplay" aria-labelledby="decision-title">
+      <svg class="story-trajectory" viewBox="0 0 1200 520" aria-hidden="true" focusable="false">
+        <path d="M35 452 C260 410 315 110 575 128 S880 390 1165 86"></path>
+        <circle cx="35" cy="452" r="8"></circle>
+        <circle cx="575" cy="128" r="8"></circle>
+        <circle class="impact-ring" cx="1165" cy="86" r="22"></circle>
+      </svg>
       <div class="mechanic-layout">
-        <figure class="phone-proof">
-          <img src="assets/images/master-the-wind.jpg" width="1080" height="1920" loading="lazy" alt="A real Siege Winds mobile capture showing two keeps, a wind readout, and the aiming controls.">
-        </figure>
         <div class="section-copy">
-          <h2 id="decision-title">Win with the better shot.</h2>
-          <p>
-            Pick where the fortress should fail, set the shot, then watch the
-            physics turn that decision into a real breach.
-          </p>
+          <p class="section-index">02 / Make the shot</p>
+          <h2 id="decision-title">Every shot<br><span>changes the fort.</span></h2>
+          <p class="section-lead">Pick where the fortress should fail. Then turn that decision into a real breach.</p>
           <div class="decision-list">
             <article class="decision">
-              <span class="decision__mark" aria-hidden="true">I</span>
-              <div>
-                <h3>Choose the weak point</h3>
-                <p>Target a support, an exposed route, or the core behind the stone.</p>
-              </div>
+              <span class="decision__mark" aria-hidden="true">01</span>
+              <div><h3>Choose the weak point</h3><p>Target a support, an exposed route, or the core behind the stone.</p></div>
             </article>
             <article class="decision">
-              <span class="decision__mark" aria-hidden="true">II</span>
-              <div>
-                <h3>Set angle and power</h3>
-                <p>Clear the terrain and strike the structure where the hit matters most.</p>
-              </div>
+              <span class="decision__mark" aria-hidden="true">02</span>
+              <div><h3>Set angle and power</h3><p>Clear the terrain and strike the structure where the hit matters most.</p></div>
             </article>
             <article class="decision">
-              <span class="decision__mark" aria-hidden="true">III</span>
-              <div>
-                <h3>Account for the wind</h3>
-                <p>Wind bends the arc. Use it to refine the shot, then commit and fire.</p>
-              </div>
+              <span class="decision__mark" aria-hidden="true">03</span>
+              <div><h3>Account for the wind</h3><p>Wind bends the arc. Read it, refine the shot, then commit and fire.</p></div>
             </article>
           </div>
         </div>
+        <figure class="phone-proof">
+          <span class="proof-label">The battlefield answers every decision</span>
+          <img src="assets/images/master-the-wind.jpg" width="1080" height="1920" loading="lazy" alt="A Siege Winds mobile capture showing two keeps, a wind readout, and the aiming controls.">
+        </figure>
       </div>
     </section>
 
-    <section class="modes-section" aria-labelledby="modes-title">
+    <section class="modes-section" id="modes" aria-labelledby="modes-title">
       <div class="modes-intro">
-        <h2 id="modes-title">Choose your duel.</h2>
-        <p>
-          Siege Winds is being built as a complete but focused mobile game. These
-          modes are planned for launch; online systems are not publicly live yet.
-        </p>
+        <p class="section-index">03 / Choose the fight</p>
+        <h2 id="modes-title">Choose your <span>duel.</span></h2>
+        <p>Four focused ways to play are planned for launch. Online services are not publicly live yet.</p>
       </div>
       <div class="battle-lines">
-        <article class="battle-line">
-          <h3>Solo vs AI</h3>
-          <p>Quick offline battles with readable opponents and adjustable difficulty.</p>
-          <span>Offline</span>
-        </article>
-        <article class="battle-line">
-          <h3>Local 1v1</h3>
-          <p>Pass the same phone, hand over the turn, and settle the rematch together.</p>
-          <span>Same device</span>
-        </article>
-        <article class="battle-line">
-          <h3>Async duels</h3>
-          <p>Take your shot, step away, and return when your rival has answered.</p>
-          <span>Planned for launch</span>
-        </article>
-        <article class="battle-line">
-          <h3>Fair rankings</h3>
-          <p>Competitive results from completed async matches, without paid ranking power.</p>
-          <span>Planned for launch</span>
-        </article>
+        <article class="battle-line"><span class="battle-line__number">01</span><h3>Solo vs AI</h3><p>Quick offline battles with readable opponents and adjustable difficulty.</p><strong>Offline</strong></article>
+        <article class="battle-line"><span class="battle-line__number">02</span><h3>Local 1v1</h3><p>Pass the same phone, hand over the turn, and settle the rematch together.</p><strong>Same device</strong></article>
+        <article class="battle-line"><span class="battle-line__number">03</span><h3>Async duels</h3><p>Take your shot, step away, and return when your rival has answered.</p><strong>Planned for launch</strong></article>
+        <article class="battle-line"><span class="battle-line__number">04</span><h3>Fair rankings</h3><p>Competitive results from completed matches, without paid ranking power.</p><strong>Planned for launch</strong></article>
       </div>
     </section>
 
-    <section class="arsenal-section" aria-labelledby="arsenal-title">
+    <section class="arsenal-section" id="arsenal" aria-labelledby="arsenal-title">
       <div class="arsenal-copy">
-        <h2 id="arsenal-title">Fifteen cannons. <strong>Zero paid chance.</strong></h2>
-        <p>
-          Build an arsenal through clear victories, campaign chapters, and
-          mastery. Each cannon has a readable silhouette and handling profile;
-          ranked competition stays free from paid advantages.
-        </p>
-      </div>
-      <div class="arsenal-stage" aria-label="Real Siege Winds progression screens">
-        <img src="assets/images/choose-your-journey.jpg" width="1080" height="1920" loading="lazy" alt="Siege Winds journey selection with campaign, arcade, tutorial, and ranked routes.">
-        <img src="assets/images/build-your-arsenal.jpg" width="1080" height="1920" loading="lazy" alt="Siege Winds cannon collection showing several unlockable artillery pieces.">
-      </div>
-    </section>
-
-    <section class="oath-section" aria-labelledby="oath-title">
-      <div class="oath">
-        <h2 id="oath-title">Skill first. Always.</h2>
-        <p>
-          Siege Winds is designed to earn trust: clean tactical play,
-          deterministic progression, halal-friendly monetization, and no system
-          that sells a better competitive outcome.
-        </p>
-        <ul class="oath-list">
-          <li>No loot boxes</li>
-          <li>No paid power</li>
-          <li>No wagers</li>
-          <li>Ad-free option planned</li>
+        <p class="section-index">04 / Choose the tool</p>
+        <h2 id="arsenal-title">Build the right <span>arsenal.</span></h2>
+        <p>Fifteen cannons are planned for launch, each with a readable silhouette and handling profile. Unlock them through clear play—not paid chance.</p>
+        <ul class="arsenal-facts">
+          <li><strong>15</strong><span>cannons planned</span></li>
+          <li><strong>0</strong><span>paid random rewards</span></li>
         </ul>
       </div>
+      <div class="arsenal-stage" aria-label="Siege Winds progression screens from the current English development build">
+        <img class="arsenal-stage__journey" src="assets/images/choose-your-journey.jpg" width="1080" height="1920" loading="lazy" alt="Siege Winds journey selection with campaign, arcade, tutorial, and ranked routes.">
+        <img class="arsenal-stage__collection" src="assets/images/build-your-arsenal.jpg" width="1080" height="1920" loading="lazy" alt="Siege Winds cannon collection showing several unlockable artillery pieces.">
+      </div>
     </section>
 
-    <section class="final-call" aria-labelledby="final-title">
+    <section class="oath-section" id="fair-play" aria-labelledby="oath-title">
+      <div class="oath">
+        <p class="section-index">05 / The line we hold</p>
+        <h2 id="oath-title">Skill wins.<br><span>Not spending.</span></h2>
+        <div class="oath-copy">
+          <p>Clean tactical play, deterministic progression, halal-friendly monetization, and no system that sells a better competitive outcome.</p>
+          <ul class="oath-list">
+            <li>No loot boxes</li><li>No paid power</li><li>No wagers</li><li>Ad-free option planned</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-call" id="coming-soon" aria-labelledby="final-title">
+      <img src="assets/images/hero-siege-impact-wide.webp" width="1672" height="941" loading="lazy" alt="" aria-hidden="true">
       <div class="final-call__inner">
-        <h2 id="final-title">The next shot is getting closer.</h2>
-        <p>
-          Siege Winds is in development for iPhone and Android. Store links and
-          a release date will appear here only when they are real.
-        </p>
+        <p class="section-index">The next battle</p>
+        <h2 id="final-title">The next siege<br><span>is coming.</span></h2>
+        <p>Siege Winds is in development for iPhone and Android. Store links and a release date will appear here only when they are real.</p>
         <span class="final-status">Coming soon · iOS &amp; Android</span>
       </div>
     </section>
   </main>
 
-  <footer class="landing-footer">
-    <p>© 2026 Siege Winds · Development preview</p>
-  </footer>
+  <footer class="landing-footer"><p>© 2026 Siege Winds · Development preview</p></footer>
 </body>
 </html>
