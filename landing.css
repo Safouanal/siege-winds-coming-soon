@@ -158,26 +158,15 @@ a:focus-visible {
   display: inline-flex;
   align-items: center;
   justify-self: start;
-  gap: 0.65rem;
   direction: ltr;
   color: var(--mist);
   text-decoration: none;
 }
 
 .brand-lockup img {
-  width: 2.35rem;
-  height: 2.35rem;
-  border: 1px solid rgba(255, 213, 110, 0.45);
-  border-radius: 0.45rem;
-  box-shadow: 0 0 22px rgba(232, 174, 59, 0.12);
-}
-
-.brand-lockup span {
-  font-family: "Cinzel", Georgia, serif;
-  font-size: 0.88rem;
-  font-weight: 700;
-  letter-spacing: 0.075em;
-  white-space: nowrap;
+  width: 9.25rem;
+  height: auto;
+  filter: drop-shadow(0 0 16px rgba(232, 174, 59, 0.16));
 }
 
 .campaign-nav {
@@ -364,13 +353,11 @@ a:focus-visible {
 }
 
 .hero-wordmark {
+  display: block;
+  width: clamp(15rem, 28vw, 23rem);
+  height: auto;
   margin: 0 0 0.6rem;
-  color: var(--mist);
-  font-family: "Cinzel", Georgia, serif;
-  font-size: clamp(1rem, 1.6vw, 1.35rem);
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.52));
 }
 
 .landing-hero h1,
@@ -1193,17 +1180,8 @@ a:focus-visible {
     gap: 0.4rem;
   }
 
-  .brand-lockup {
-    gap: 0.45rem;
-  }
-
   .brand-lockup img {
-    width: 2.1rem;
-    height: 2.1rem;
-  }
-
-  .brand-lockup span {
-    font-size: 0.72rem;
+    width: clamp(6.6rem, 32vw, 8rem);
   }
 
   .header-actions {
@@ -1248,8 +1226,8 @@ a:focus-visible {
   }
 
   .hero-wordmark {
+    width: min(78vw, 18rem);
     margin-block-end: 0.35rem;
-    font-size: 0.86rem;
   }
 
   .landing-hero h1 {
@@ -1449,10 +1427,6 @@ a:focus-visible {
 }
 
 @media (max-width: 420px) {
-  .brand-lockup span {
-    display: none;
-  }
-
   .landing-hero__content {
     width: calc(100% - 1.5rem);
     padding-block-end: 1.45rem;

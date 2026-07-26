@@ -137,24 +137,14 @@ a:focus-visible {
   display: inline-flex;
   align-items: center;
   justify-self: start;
-  gap: 0.65rem;
   direction: ltr;
   text-decoration: none;
 }
 
 .info-brand img {
-  width: 2.35rem;
-  height: 2.35rem;
-  border: 1px solid rgba(255, 213, 110, 0.45);
-  border-radius: 0.45rem;
-}
-
-.info-brand span {
-  font-family: "Cinzel", Georgia, serif;
-  font-size: 0.88rem;
-  font-weight: 700;
-  letter-spacing: 0.075em;
-  white-space: nowrap;
+  width: 9.25rem;
+  height: auto;
+  filter: drop-shadow(0 0 16px rgba(232, 174, 59, 0.16));
 }
 
 .info-nav,
@@ -514,14 +504,8 @@ html[dir="rtl"] .support-action {
     gap: 0.5rem;
   }
 
-  .info-brand span {
-    font-size: 0.75rem;
-  }
-
-  html[dir="rtl"] .info-brand span {
-    max-width: 5.75rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  .info-brand img {
+    width: clamp(6.6rem, 32vw, 8rem);
   }
 
   .info-languages a {
