@@ -2,16 +2,28 @@
 <!--
 THESIS: تقدم Siege Winds وعدًا واحدًا لا يُنسى: تنفيذ الطلقة التي تُسقط حصن الخصم فعليًا.
 OWN-WORLD: ليل جبلي، حصون حجرية ضخمة، مدافع حديدية، رايات زرقاء وحمراء، شرائط قيادة بلون الذهب المصهور، ودخان تضيئه الضربة.
-STORY: الرغبة في الضربة الحاسمة، فهم الثغرة، اتخاذ قرارات الطلقة الثلاثة، اختيار المبارزة، بناء الترسانة، الثقة بوعد اللعب العادل، ثم تذكّر حالة «قريبًا» الصادقة.
-FIRST VIEWPORT: شريط قيادة أسود ثابت، لوحة أصلية للضربة بملء الشاشة، وعد ضخم بإسقاط الحصن، إجراء ذهبي واحد، وحالة iOS وAndroid ظاهرة مباشرة.
+STORY: الرغبة في الضربة الحاسمة، فهم الثغرة، اتخاذ قرارات الطلقة الثلاثة، اختيار المبارزة، بناء الترسانة، الثقة بوعد اللعب العادل، ثم معرفة حالة إصدار iOS وAndroid بدقة.
+FIRST VIEWPORT: شريط قيادة أسود ثابت، لوحة أصلية للضربة بملء الشاشة، وعد ضخم بإسقاط الحصن، إجراء ذهبي لمتجر App Store، وحالة iOS وAndroid ظاهرة مباشرة.
 FORM: مجلة جبهة الحصون، البنية الواقعية الرابعة، seed 5fb05b3d.
 -->
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow, noarchive">
-  <meta name="description" content="Siege Winds لعبة مدفعية تكتيكية قادمة قريبًا إلى iOS وAndroid. سدّد، أطلق، افتح ثغرة ودمّر قلب حصن خصمك.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="description" content="تم اعتماد Siege Winds 1.0.0 (155) على iOS وبدأ طرحه للعامة على App Store. ما زال إصدار Android في اختبار مغلق. سدّد وافتح ثغرة وأسقط حصن خصمك.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Siege Winds">
+  <meta property="og:title" content="Siege Winds — أسقط حصن خصمك">
+  <meta property="og:description" content="تم اعتماد iOS 1.0.0 (155) وبدأ طرحه للعامة على App Store. ما زال Android في اختبار مغلق. اختر قذيفتك وافتح ثغرة وأسقط حصن خصمك.">
+  <meta property="og:url" content="https://siegewinds.com/ar.html">
+  <meta property="og:image" content="https://siegewinds.com/assets/images/hero-siege-impact-wide.webp">
+  <meta property="og:image:width" content="1672">
+  <meta property="og:image:height" content="941">
+  <meta property="og:locale" content="ar">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://siegewinds.com/ar.html">
   <link rel="alternate" hreflang="en" href="https://siegewinds.com/">
   <link rel="alternate" hreflang="fr" href="https://siegewinds.com/fr.html">
@@ -21,7 +33,7 @@ FORM: مجلة جبهة الحصون، البنية الواقعية الراب�
   <link rel="preload" href="assets/images/hero-siege-impact-wide.webp" as="image" media="(min-width: 721px)">
   <link rel="preload" href="assets/images/hero-siege-impact-mobile.webp" as="image" media="(max-width: 720px)">
   <link rel="stylesheet" href="landing.css">
-  <title>Siege Winds — أسقط حصن خصمك · قريبًا</title>
+  <title>Siege Winds — أسقط حصن خصمك · يُطرح على iOS</title>
 </head>
 <body class="landing-page" dir="rtl">
   <a class="skip-link" href="#main-content">انتقل إلى الحصار</a>
@@ -39,7 +51,7 @@ FORM: مجلة جبهة الحصون، البنية الواقعية الراب�
         <nav class="language-nav" aria-label="اللغة">
           <a href="index.html" lang="en">EN</a><a href="fr.html" lang="fr">FR</a><a href="ar.html" lang="ar" aria-current="page">ع</a>
         </nav>
-        <a class="header-status" href="#coming-soon">قريبًا</a>
+        <a class="header-status" href="https://apps.apple.com/app/siege-winds/id6785037486" aria-label="عرض Siege Winds على App Store">App Store</a>
       </div>
     </div>
   </header>
@@ -48,7 +60,7 @@ FORM: مجلة جبهة الحصون، البنية الواقعية الراب�
     <section class="landing-hero" aria-labelledby="hero-title">
       <picture class="landing-hero__media">
         <source media="(max-width: 720px)" srcset="assets/images/hero-siege-impact-mobile.webp">
-        <img class="landing-hero__art" src="assets/images/hero-siege-impact-wide.webp" width="1672" height="941" alt="حصن حجري أزرق يطلق النار عبر وادٍ جبلي بينما تنفجر ضربة حاسمة في الحصن الأحمر المنافس.">
+        <img class="landing-hero__art" src="assets/images/hero-siege-impact-wide.webp" width="1672" height="941" fetchpriority="high" alt="حصن حجري أزرق يطلق النار عبر وادٍ جبلي بينما تنفجر ضربة حاسمة في الحصن الأحمر المنافس.">
       </picture>
       <div class="landing-hero__content">
         <p class="campaign-kicker">مبارزات مدفعية عند الأسوار</p>
@@ -56,8 +68,8 @@ FORM: مجلة جبهة الحصون، البنية الواقعية الراب�
         <h1 id="hero-title">أسقط <span>حصن خصمك.</span></h1>
         <p class="landing-hero__lead">جهّز المدفع. قدّر المدى. افتح الثغرة. كل قذيفة تهز الأسوار حتى ينكشف قلب الحصن.</p>
         <div class="hero-actions">
-          <a class="campaign-button" href="#duel">ادخل الحصار <span aria-hidden="true">↙</span></a>
-          <div class="release-lockup"><strong>قريبًا</strong><span><bdi dir="ltr">iOS / Android</bdi></span></div>
+          <a class="campaign-button" href="https://apps.apple.com/app/siege-winds/id6785037486" aria-label="عرض Siege Winds على App Store">عرض على App Store <span aria-hidden="true">↖</span></a>
+          <div class="release-lockup"><strong><bdi dir="ltr">iOS 1.0.0 (155)</bdi> معتمد</strong><span>بدأ طرحه للعامة</span><span>Android · اختبار مغلق</span></div>
         </div>
         <p class="platform-note">مباراة سريعة ضد الذكاء الاصطناعي · لاعب ضد لاعب محلي · حملة · أركيد</p>
       </div>
@@ -74,10 +86,10 @@ FORM: مجلة جبهة الحصون، البنية الواقعية الراب�
         <img src="assets/images/hero-siege-impact-mobile.webp" width="941" height="1672" loading="lazy" alt="حصن حجري أزرق يطلق النار عبر وادٍ جبلي بينما تصيب ضربة حاسمة الحصن الأحمر المنافس.">
       </div>
       <div class="impact-copy">
-        <p class="section-index">01 / الحصار</p>
+        <p class="section-index">الحصار</p>
         <h2 id="impact-title">هدف واحد.<br><span>أسقطه.</span></h2>
         <p>زعزع الحجر. حطّم الدعامات. افتح ثغرة إلى القلب. تحتفظ الأسوار بأثر كل قذيفة، وكل جدار يسقط يمهّد للطلقة التالية.</p>
-        <p class="localization-note">تعرض الصور النسخة الإنجليزية الجاري تطويرها حاليًا.</p>
+        <p class="localization-note">تعرض الصور النسخة الإنجليزية الحالية.</p>
         <div class="impact-verdict"><strong>سدّد. أطلق. افتح الثغرة.</strong><span>دمّر القلب المكشوف قبل أن يصل خصمك إلى قلب حصنك.</span></div>
       </div>
     </section>
@@ -88,7 +100,7 @@ FORM: مجلة جبهة الحصون، البنية الواقعية الراب�
       </svg>
       <div class="mechanic-layout">
         <div class="section-copy">
-          <p class="section-index">02 / جهّز الطلقة</p>
+          <p class="section-index">جهّز الطلقة</p>
           <h2 id="decision-title">كل قذيفة<br><span>تهز الحصن.</span></h2>
           <p class="section-lead">اختر السور الذي يجب أن ينهار، ثم حوّل المسار إلى ثغرة.</p>
           <div class="decision-list">
@@ -106,27 +118,29 @@ FORM: مجلة جبهة الحصون، البنية الواقعية الراب�
 
     <section class="modes-section" id="modes" aria-labelledby="modes-title">
       <div class="modes-intro">
-        <p class="section-index">03 / اختر المعركة</p>
+        <p class="section-index">اختر المعركة</p>
         <h2 id="modes-title">اختر <span>مبارزتك.</span></h2>
-        <p>تتضمن النسخة الحالية أربع طرق مباشرة لخوض المعركة.</p>
+        <p>يتضمن الإصدار <bdi dir="ltr">1.0.0 (155)</bdi> خمس طرق مباشرة لخوض المعركة.</p>
       </div>
       <div class="battle-lines">
-        <article class="battle-line"><span class="battle-line__number">01</span><h3>مباراة سريعة ضد الذكاء الاصطناعي</h3><p>ابدأ فورًا مبارزة مدفعية سريعة ضد الحاسوب.</p><strong>فردي</strong></article>
-        <article class="battle-line"><span class="battle-line__number">02</span><h3>لاعب ضد لاعب محلي</h3><p>مرّر الهاتف نفسه، وسلّم الدور، ثم احسم جولة الإعادة معًا.</p><strong>الجهاز نفسه</strong></article>
-        <article class="battle-line"><span class="battle-line__number">03</span><h3>الحملة</h3><p>استولِ على 20 برجًا في عوالم النهر والصحراء والثلج والغابة.</p><strong>تقدّم</strong></article>
-        <article class="battle-line"><span class="battle-line__number">04</span><h3>الأركيد · Master Circuit</h3><p>حقق 12 فوزًا في الأركيد، ثم واجه ثلاثة حصون في Master Circuit.</p><strong>Master Circuit</strong></article>
+        <article class="battle-line"><h3>مباراة سريعة ضد الذكاء الاصطناعي</h3><p>ابدأ فورًا مبارزة مدفعية سريعة ضد الحاسوب.</p><strong>فردي</strong></article>
+        <article class="battle-line"><h3>لاعب ضد لاعب محلي</h3><p>مرّر الهاتف نفسه، وسلّم الدور، ثم احسم جولة الإعادة معًا.</p><strong>الجهاز نفسه</strong></article>
+        <article class="battle-line"><h3>الحملة</h3><p>استولِ على 20 برجًا في عوالم النهر والصحراء والثلج والغابة.</p><strong>تقدّم</strong></article>
+        <article class="battle-line"><h3>الأركيد · Master Circuit</h3><p>حقق 12 فوزًا في الأركيد، ثم واجه ثلاثة حصون في Master Circuit.</p><strong>Master Circuit</strong></article>
+        <article class="battle-line"><h3>مبارزات غير متزامنة</h3><p>العب دورك الآن، ثم أكمل المبارزة المصنفة عند عودة خصمك.</p><strong>عبر الإنترنت</strong></article>
       </div>
+      <p class="modes-status"><strong>حالة الإصدار</strong> تتضمن نسخة <bdi dir="ltr">iOS 1.0.0 (155)</bdi> هوية اللاعب والمبارزات غير المتزامنة والتصنيفات، وقد تم اعتمادها وبدأ طرحها للعامة على App Store. ما زالت نسخة <bdi dir="ltr">Android 1.0.0 (155)</bdi> في اختبار مغلق قبل الإصدار العام.</p>
     </section>
 
     <section class="arsenal-section" id="arsenal" aria-labelledby="arsenal-title">
       <div class="arsenal-copy">
-        <p class="section-index">04 / اختر المدفع</p>
+        <p class="section-index">اختر المدفع</p>
         <h2 id="arsenal-title">ابنِ الترسانة <span>المناسبة.</span></h2>
         <p>اجمع خمسة عشر مدفعًا باللعب وبلوغ مراحل واضحة. لكل مدفع شكل وطريقة تحكم مميزة.</p>
         <ul class="arsenal-facts"><li><strong>15</strong><span>مدفعًا لجمعها</span></li><li><strong>0</strong><span>مكافآت عشوائية مدفوعة</span></li></ul>
-        <p class="localization-note">تعرض شاشات التقدم النسخة الإنجليزية الجاري تطويرها حاليًا.</p>
+        <p class="localization-note">تعرض شاشات التقدم النسخة الإنجليزية الحالية.</p>
       </div>
-      <div class="arsenal-stage" role="group" aria-label="شاشات التقدم من النسخة الإنجليزية الحالية من Siege Winds">
+      <div class="arsenal-stage" role="group" aria-label="شاشات التقدم من إصدار Siege Winds الإنجليزي الحالي">
         <img class="arsenal-stage__journey" src="assets/images/current-journey-hub.webp" width="884" height="1920" loading="lazy" alt="شاشة المسارات الحالية في Siege Winds وتعرض التدريب والأركيد والحملة.">
         <img class="arsenal-stage__collection" src="assets/images/current-cannon-collection.webp" width="884" height="1920" loading="lazy" alt="مجموعة المدافع الحالية في Siege Winds وتعرض عدة قطع مدفعية قابلة للفتح.">
       </div>
@@ -134,28 +148,29 @@ FORM: مجلة جبهة الحصون، البنية الواقعية الراب�
 
     <section class="oath-section" id="fair-play" aria-labelledby="oath-title">
       <div class="oath">
-        <p class="section-index">05 / قاعدة الحصار</p>
+        <p class="section-index">قاعدة الحصار</p>
         <h2 id="oath-title">النصر يُحرز.<br><span>ولا يُشترى.</span></h2>
         <div class="oath-copy">
           <p>تقدّم بلا سحب عشوائي مدفوع ولا أفضلية تُشترى: الطلقة الأفضل هي التي تحسم الفائز.</p>
           <ul class="oath-list"><li>لا صناديق عشوائية</li><li>لا أفضلية مدفوعة</li><li>لا رهانات</li><li>خيار بلا إعلانات</li></ul>
+          <p class="oath-detail">عند تفعيلها، تكون إعلانات المكافآت اختيارية وتكون المشتريات مباشرة أو تجميلية أو لإزالة الإعلانات. بدأ الطرح العام على iOS، بينما ما زال Android في اختبار مغلق.</p>
         </div>
       </div>
     </section>
 
-    <section class="final-call" id="coming-soon" aria-labelledby="final-title">
+    <section class="final-call" id="release" aria-labelledby="final-title">
       <img src="assets/images/hero-siege-impact-wide.webp" width="1672" height="941" loading="lazy" alt="" aria-hidden="true">
       <div class="final-call__inner">
-        <p class="section-index">المعركة القادمة</p>
-        <h2 id="final-title">الحصار التالي<br><span>قادم.</span></h2>
-        <p>Siege Winds قيد التطوير لهواتف <bdi dir="ltr">iPhone</bdi> و<bdi dir="ltr">Android</bdi>. لن تظهر روابط المتاجر أو موعد الإطلاق هنا إلا عندما تصبح حقيقية.</p>
-        <span class="final-status">قريبًا · <bdi dir="ltr">iOS / Android</bdi></span>
+        <p class="section-index">حالة الإصدار</p>
+        <h2 id="final-title">الحصار يصل<br><span>إلى App Store.</span></h2>
+        <p>تم اعتماد إصدار <bdi dir="ltr">iOS 1.0.0 (155)</bdi> وبدأ طرحه للعامة على App Store. ما زال إصدار <bdi dir="ltr">Android 1.0.0 (155)</bdi> في اختبار مغلق قبل الإصدار العام.</p>
+        <a class="final-status" href="https://apps.apple.com/app/siege-winds/id6785037486" aria-label="عرض Siege Winds على App Store">عرض على App Store</a>
       </div>
     </section>
   </main>
 
   <footer class="landing-footer">
-    <p>© 2026 Siege Winds · معاينة تطوير</p>
+    <p>© 2026 Siege Winds · الإصدار <bdi dir="ltr">1.0.0 (155)</bdi></p>
     <nav aria-label="معلومات">
       <a href="privacy-ar.html">الخصوصية</a>
       <a href="support-ar.html">الدعم</a>

@@ -450,6 +450,7 @@ a:focus-visible {
 .release-lockup {
   display: grid;
   align-content: center;
+  max-width: 19rem;
   min-height: 3.4rem;
   padding-inline-start: 1rem;
   border-inline-start: 2px solid rgba(232, 174, 59, 0.72);
@@ -469,6 +470,7 @@ a:focus-visible {
   color: var(--muted);
   font-size: 0.68rem;
   letter-spacing: 0.08em;
+  line-height: 1.18;
 }
 
 .platform-note {
@@ -797,7 +799,7 @@ a:focus-visible {
 
 .battle-line {
   display: grid;
-  grid-template-columns: 4rem minmax(12rem, 0.78fr) minmax(18rem, 1.2fr) auto;
+  grid-template-columns: minmax(12rem, 0.78fr) minmax(18rem, 1.2fr) auto;
   gap: 1.5rem;
   align-items: center;
   min-height: 7rem;
@@ -809,14 +811,6 @@ a:focus-visible {
 .battle-line:hover {
   padding-inline: 0.7rem;
   background: rgba(232, 174, 59, 0.08);
-}
-
-.battle-line__number {
-  color: #9b6510;
-  font-family: "Alegreya Sans SC", system-ui, sans-serif;
-  font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
 }
 
 .battle-line h3 {
@@ -843,6 +837,24 @@ a:focus-visible {
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+.modes-status {
+  max-width: 48rem;
+  margin: 2.4rem 0 0 auto;
+  padding-inline-start: 1.2rem;
+  border-inline-start: 3px solid #9b6510;
+  color: #4d585d;
+  font-size: 0.94rem;
+}
+
+.modes-status strong {
+  display: block;
+  margin-block-end: 0.2rem;
+  color: var(--ink);
+  font-family: "Alegreya Sans SC", system-ui, sans-serif;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
 }
 
 .arsenal-section {
@@ -985,6 +997,15 @@ a:focus-visible {
   font-weight: 700;
 }
 
+.oath-detail {
+  max-width: 39rem;
+  margin: 1.3rem 0 0;
+  padding-block-start: 1rem;
+  border-block-start: 1px solid rgba(4, 10, 14, 0.32);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
 .final-call {
   position: relative;
   display: flex;
@@ -1052,7 +1073,13 @@ a:focus-visible {
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.1em;
+  text-decoration: none;
   text-transform: uppercase;
+}
+
+.final-status:hover {
+  border-color: var(--gold-bright);
+  color: var(--mist);
 }
 
 .landing-footer {
@@ -1115,7 +1142,7 @@ a:focus-visible {
   }
 
   .battle-line {
-    grid-template-columns: 3rem minmax(10rem, 0.8fr) minmax(15rem, 1.2fr) auto;
+    grid-template-columns: minmax(10rem, 0.8fr) minmax(15rem, 1.2fr) auto;
     gap: 1rem;
   }
 }
@@ -1158,12 +1185,12 @@ a:focus-visible {
   }
 
   .battle-line {
-    grid-template-columns: 2.5rem 1fr auto;
+    grid-template-columns: 1fr auto;
     gap: 0.75rem 1rem;
   }
 
   .battle-line p {
-    grid-column: 2 / -1;
+    grid-column: 1 / -1;
   }
 
   .arsenal-stage {
@@ -1293,15 +1320,15 @@ a:focus-visible {
   }
 
   .command-strip {
-    justify-content: start;
-    gap: 0.7rem;
-    min-height: 3rem;
-    padding-inline: 0.8rem;
-    overflow-x: auto;
-    scrollbar-width: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.3rem 1rem;
+    min-height: 4.4rem;
+    padding: 0.65rem 0.9rem;
+    white-space: normal;
   }
 
-  .command-strip::-webkit-scrollbar {
+  .command-strip i {
     display: none;
   }
 
@@ -1370,7 +1397,7 @@ a:focus-visible {
   }
 
   .battle-line {
-    grid-template-columns: 2.2rem 1fr;
+    grid-template-columns: 1fr;
     min-height: auto;
     padding-block: 1.35rem;
   }
@@ -1381,8 +1408,13 @@ a:focus-visible {
 
   .battle-line p,
   .battle-line strong {
-    grid-column: 2;
+    grid-column: 1;
     justify-self: start;
+  }
+
+  .modes-status {
+    margin-block-start: 2rem;
+    font-size: 0.9rem;
   }
 
   .battle-line strong {
@@ -1452,11 +1484,13 @@ a:focus-visible {
   }
 
   .hero-actions {
+    flex-direction: column;
     align-items: stretch;
   }
 
   .campaign-button {
-    flex: 1 1 auto;
+    align-self: flex-start;
+    flex: 0 0 auto;
     gap: 0.4rem;
     padding-inline: 0.6rem;
     font-size: 0.68rem;
@@ -1464,7 +1498,10 @@ a:focus-visible {
   }
 
   .release-lockup {
-    flex: 0 0 auto;
+    width: 100%;
+    max-width: none;
+    min-height: 0;
+    padding-block: 0.2rem;
   }
 
   .platform-note {
