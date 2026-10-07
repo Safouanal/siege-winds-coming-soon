@@ -417,6 +417,13 @@ a:focus-visible {
   margin-block-start: 1.55rem;
 }
 
+.store-actions,
+.final-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
 .campaign-button {
   display: inline-flex;
   min-height: 3.4rem;
@@ -439,6 +446,17 @@ a:focus-visible {
 .campaign-button:hover {
   background: var(--gold-bright);
   transform: translateY(-2px);
+}
+
+.campaign-button--secondary {
+  border: 1px solid var(--gold);
+  background: rgba(4, 10, 14, 0.58);
+  color: var(--gold-bright) !important;
+}
+
+.campaign-button--secondary:hover {
+  background: rgba(232, 174, 59, 0.16);
+  color: var(--mist) !important;
 }
 
 .campaign-button span {
