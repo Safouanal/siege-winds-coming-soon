@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Official press kit for Siege Winds, a portrait artillery strategy game for iOS and Android.">
+  <title>Siege Winds — Press kit</title>
+  <style>
+    @font-face { font-family: "Cinzel"; src: url("assets/fonts/cinzel-bold.woff2") format("woff2"); font-display: swap; }
+    @font-face { font-family: "Alegreya Sans"; src: url("assets/fonts/alegreya-sans-medium.woff2") format("woff2"); font-display: swap; }
+    :root { color-scheme: dark; --ink: #eee7d6; --muted: #c5b99e; --gold: #e2b96a; --line: rgba(226,185,106,.36); --night: #101821; --stone: #1d2b36; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-width: 320px; background: radial-gradient(circle at 12% 0%, #33495b 0, transparent 32rem), linear-gradient(160deg, #14202a, #0b1117 72%); color: var(--ink); font: 400 1.18rem/1.5 "Alegreya Sans", Georgia, serif; }
+    a { color: inherit; text-underline-offset: .18em; }
+    a:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
+    .wrap { width: min(1100px, calc(100% - 40px)); margin: auto; }
+    header { border-bottom: 1px solid var(--line); background: rgba(8,13,18,.72); }
+    .masthead { min-height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 22px; }
+    .brand { display: inline-flex; align-items: center; text-decoration: none; }
+    .brand img { display: block; width: 158px; height: auto; }
+    .home { color: var(--muted); font: 600 .82rem/1 "Cinzel", serif; letter-spacing: .08em; text-transform: uppercase; }
+    .hero { padding: 72px 0 44px; display: grid; grid-template-columns: minmax(0, 1.22fr) minmax(260px, .78fr); gap: 48px; align-items: center; }
+    .eyebrow { margin: 0 0 10px; color: var(--gold); font: 600 .78rem/1.3 "Cinzel", serif; letter-spacing: .15em; text-transform: uppercase; }
+    h1, h2, h3 { font-family: "Cinzel", Georgia, serif; font-weight: 400; line-height: 1.16; }
+    h1 { max-width: 720px; margin: 0; font-size: clamp(2.25rem, 6vw, 4.55rem); letter-spacing: -.02em; }
+    h2 { margin: 0; font-size: clamp(1.55rem, 3vw, 2.25rem); }
+    h3 { margin: 0; font-size: 1rem; color: var(--gold); }
+    .lead { max-width: 690px; margin: 20px 0 0; font-size: clamp(1.3rem, 2.4vw, 1.7rem); color: #f3eddc; }
+    .quick-facts { margin: 0; padding: 26px; display: grid; gap: 18px; border: 1px solid var(--line); background: rgba(25,38,48,.74); box-shadow: 0 16px 50px rgba(0,0,0,.2); }
+    .quick-facts div { display: grid; gap: 2px; }
+    dt { color: var(--gold); font: 600 .72rem/1.4 "Cinzel", serif; letter-spacing: .11em; text-transform: uppercase; }
+    dd { margin: 0; color: var(--ink); }
+    main { padding-bottom: 70px; }
+    .section { padding: 42px 0; border-top: 1px solid var(--line); }
+    .section-intro { max-width: 760px; }
+    .section-intro p:last-child { color: var(--muted); }
+    .link-grid, .asset-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 24px; }
+    .link-card, .asset-card { min-width: 0; padding: 22px; border: 1px solid var(--line); background: rgba(25,38,48,.6); }
+    .link-card { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
+    .link-card p, .asset-card p { margin: 0; color: var(--muted); }
+    .button { display: inline-block; margin-top: auto; padding: 11px 14px; border: 1px solid var(--gold); color: #fff5da; font: 600 .78rem/1 "Cinzel", serif; letter-spacing: .06em; text-decoration: none; text-transform: uppercase; }
+    .button:hover { background: rgba(226,185,106,.14); }
+    .asset-card { display: flex; flex-direction: column; gap: 14px; }
+    .asset-card img { display: block; width: 100%; aspect-ratio: 5 / 6; object-fit: contain; background: #101820; }
+    .asset-card--logo img { aspect-ratio: 5 / 3; padding: 12px; }
+    .asset-card--screen img { object-fit: cover; object-position: top; }
+    .asset-card a { color: #fff5da; font: 600 .78rem/1.2 "Cinzel", serif; letter-spacing: .06em; text-transform: uppercase; }
+    .notice { max-width: 880px; padding: 24px; border-left: 3px solid var(--gold); background: rgba(25,38,48,.53); color: var(--muted); }
+    .notice p { margin: 0; }
+    .notice p + p { margin-top: 12px; }
+    footer { padding: 30px 0 42px; border-top: 1px solid var(--line); color: var(--muted); font-size: 1rem; }
+    footer p { margin: 0; }
+    @media (max-width: 760px) {
+      .wrap { width: min(100% - 28px, 620px); }
+      .masthead { min-height: 64px; }
+      .brand img { width: 132px; }
+      .home { font-size: .69rem; }
+      .hero { padding: 48px 0 34px; grid-template-columns: 1fr; gap: 28px; }
+      .section { padding: 34px 0; }
+      .link-grid, .asset-grid { grid-template-columns: 1fr; }
+      .asset-card img { max-height: 430px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap masthead">
+      <a class="brand" href="index.html" aria-label="Siege Winds home"><img src="assets/images/siege-winds-logo.png" width="560" height="180" alt="Siege Winds"></a>
+      <a class="home" href="index.html">Game site</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">Official press kit</p>
+        <h1 id="page-title">Siege Winds</h1>
+        <p class="lead">A portrait artillery strategy game where every shot can break a rival keep.</p>
+      </div>
+      <dl class="quick-facts">
+        <div><dt>Platforms</dt><dd>iOS and Android</dd></div>
+        <div><dt>Developer &amp; publisher</dt><dd>Safouan Alioui / Safouan Studio</dd></div>
+        <div><dt>Website</dt><dd><a href="https://siegewinds.com/">siegewinds.com</a></dd></div>
+      </dl>
+    </section>
+
+    <section class="section" aria-labelledby="about-title">
+      <div class="section-intro">
+        <p class="eyebrow">About the game</p>
+        <h2 id="about-title">Choose the shot. Open the breach.</h2>
+        <p>In Siege Winds, players choose a cannonball, set the angle, load powder, and fire. The aim is direct: damage the rival fortress, expose its core, and bring it down.</p>
+      </div>
+      <div class="link-grid">
+        <article class="link-card">
+          <h3>App Store</h3>
+          <p>Available for iPhone.</p>
+          <a class="button" href="https://apps.apple.com/app/siege-winds/id6785037486">View on the App Store</a>
+        </article>
+        <article class="link-card">
+          <h3>Google Play</h3>
+          <p>Available for Android devices.</p>
+          <a class="button" href="https://play.google.com/store/apps/details?id=com.siegewinds.game">Get it on Google Play</a>
+        </article>
+        <article class="link-card">
+          <h3>Gameplay video</h3>
+          <p>A short gameplay video with sound.</p>
+          <a class="button" href="https://www.youtube.com/shorts/waXL8zy-lss">Watch on YouTube</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="assets-title">
+      <div class="section-intro">
+        <p class="eyebrow">Official assets</p>
+        <h2 id="assets-title">Ready for coverage</h2>
+        <p>Download the original files below. These are the same official assets already used on the Siege Winds website.</p>
+      </div>
+      <div class="asset-grid">
+        <article class="asset-card asset-card--logo">
+          <img src="assets/images/siege-winds-logo.png" width="560" height="180" alt="Siege Winds logo">
+          <h3>Logo</h3>
+          <a href="assets/images/siege-winds-logo.png" download>Download PNG</a>
+        </article>
+        <article class="asset-card">
+          <img src="assets/images/app-icon-256.png" width="256" height="256" alt="Siege Winds app icon">
+          <h3>App icon</h3>
+          <a href="assets/images/app-icon-256.png" download>Download PNG</a>
+        </article>
+        <article class="asset-card asset-card--screen">
+          <img src="assets/images/gameplay-preview-poster.png" width="1080" height="1920" alt="Siege Winds gameplay screenshot showing artillery controls and two rival keeps">
+          <h3>Gameplay screenshot</h3>
+          <a href="assets/images/gameplay-preview-poster.png" download>Download PNG</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="details-title">
+      <div class="section-intro">
+        <p class="eyebrow">Press details</p>
+        <h2 id="details-title">Contact and usage</h2>
+      </div>
+      <div class="notice">
+        <p>Press contact: <a href="mailto:contact@siegewinds.com">contact@siegewinds.com</a></p>
+        <p>Siege Winds is free to download and may include advertising and optional in-app purchases, including an optional no-ads purchase. The linked video shows real gameplay. Some visual assets were created with AI assistance.</p>
+        <p>Assets supplied on this page may be used for editorial coverage of Siege Winds only. Please credit <strong>Siege Winds / Safouan Studio</strong>. No rights are granted for third-party trademarks, storefronts, platforms, or video services.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap"><p>© 2026 Siege Winds. Press kit.</p></div>
+  </footer>
+</body>
+</html>
