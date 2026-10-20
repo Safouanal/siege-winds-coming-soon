@@ -1,217 +1,52 @@
 <!DOCTYPE html>
-<!--
-THESIS: تقدم Siege Winds وعدًا واحدًا لا يُنسى: تنفيذ الطلقة التي تُسقط حصن الخصم فعليًا.
-OWN-WORLD: ليل جبلي، حصون حجرية ضخمة، مدافع حديدية، رايات زرقاء وحمراء، شرائط قيادة بلون الذهب المصهور، ودخان تضيئه الضربة.
-STORY: الرغبة في الضربة الحاسمة، فهم الثغرة، اتخاذ قرارات الطلقة الثلاثة، اختيار المبارزة، بناء الترسانة، الثقة بوعد اللعب العادل، ثم معرفة حالة إصدار iOS وAndroid بدقة.
-FIRST VIEWPORT: شريط قيادة أسود ثابت، لوحة أصلية للضربة بملء الشاشة، وعد ضخم بإسقاط الحصن، إجراء ذهبي لمتجر App Store، وحالة iOS وAndroid ظاهرة مباشرة.
-FORM: مجلة جبهة الحصون، البنية الواقعية الرابعة، seed 5fb05b3d.
--->
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="description" content="Siege Winds هي لعبة مدفعية مجانية للجوال على iPhone وAndroid. العب منفردًا ضد الذكاء الاصطناعي أو مع لاعبين على الهاتف نفسه في مبارزات مدافع سريعة ومباشرة.">
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MobileApplication",
-      "name": "Siege Winds",
-      "url": "https://siegewinds.com/ar.html",
-      "description": "Siege Winds هي لعبة مدفعية مجانية للجوال على iPhone وAndroid. العب منفردًا ضد الذكاء الاصطناعي أو مع لاعبين على الهاتف نفسه في مبارزات مدافع سريعة ومباشرة.",
-      "image": "https://siegewinds.com/assets/images/hero-siege-impact-wide.webp",
-      "applicationCategory": "GameApplication",
-      "operatingSystem": ["iOS", "Android"],
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "downloadUrl": [
-        "https://apps.apple.com/app/siege-winds/id6785037486",
-        "https://play.google.com/store/apps/details?id=com.siegewinds.game"
-      ]
-    }
-  </script>
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Siege Winds">
-  <meta property="og:title" content="Siege Winds — أسقط حصن خصمك">
-  <meta property="og:description" content="Siege Winds متاح على App Store وGoogle Play. اختر قذيفتك وافتح ثغرة وأسقط حصن خصمك.">
-  <meta property="og:url" content="https://siegewinds.com/ar.html">
-  <meta property="og:image" content="https://siegewinds.com/assets/images/hero-siege-impact-wide.webp">
-  <meta property="og:image:width" content="1672">
-  <meta property="og:image:height" content="941">
-  <meta property="og:locale" content="ar">
-  <meta property="og:locale:alternate" content="en_US">
-  <meta property="og:locale:alternate" content="fr_FR">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="description" content="اكتشف Siege Winds V2: مبارزات مدافع وحملة وحصون تبنيها ومظاهر تجميلية. تحديث قادم إلى iPhone وAndroid؛ واجهة اللعبة حاليًا بالفرنسية.">
+  <title>Siege Winds V2 | مبارزات مدافع وحملة وبناء حصن</title>
   <link rel="canonical" href="https://siegewinds.com/ar.html">
   <link rel="alternate" hreflang="en" href="https://siegewinds.com/">
   <link rel="alternate" hreflang="fr" href="https://siegewinds.com/fr.html">
   <link rel="alternate" hreflang="ar" href="https://siegewinds.com/ar.html">
   <link rel="alternate" hreflang="x-default" href="https://siegewinds.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Siege Winds">
+  <meta property="og:title" content="Siege Winds V2 | مبارزات مدافع وحملة وبناء حصن">
+  <meta property="og:description" content="اكتشف Siege Winds V2: مبارزات مدافع وحملة وحصون تبنيها ومظاهر تجميلية. تحديث قادم إلى iPhone وAndroid؛ واجهة اللعبة حاليًا بالفرنسية.">
+  <meta property="og:url" content="https://siegewinds.com/ar.html">
+  <meta property="og:image" content="https://siegewinds.com/assets/images/v2/v2-02-duel.webp">
+  <meta property="og:image:width" content="720">
+  <meta property="og:image:height" content="1280">
+  <meta property="og:locale" content="ar">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/images/app-icon-256.png" type="image/png">
-  <link rel="preload" href="assets/images/hero-siege-impact-wide.webp" as="image" media="(min-width: 721px)">
-  <link rel="preload" href="assets/images/hero-siege-impact-mobile.webp" as="image" media="(max-width: 720px)">
   <link rel="stylesheet" href="landing.css">
   <script src="campaign-links.js" defer></script>
-  <title>Siege Winds | لعبة مدفعية للجوال ومبارزات مدافع</title>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoGame", "name": "Siege Winds", "url": "https://siegewinds.com/ar.html", "description": "اكتشف Siege Winds V2: مبارزات مدافع وحملة وحصون تبنيها ومظاهر تجميلية. تحديث قادم إلى iPhone وAndroid؛ واجهة اللعبة حاليًا بالفرنسية.", "image": "https://siegewinds.com/assets/images/v2/v2-02-duel.webp", "gamePlatform": ["iOS", "Android"], "inLanguage": "fr"}</script>
 </head>
-<body class="landing-page" dir="rtl">
-  <a class="skip-link" href="#main-content">انتقل إلى الحصار</a>
-
-  <header class="campaign-header">
-    <div class="campaign-header__inner">
-      <a class="brand-lockup" href="ar.html" aria-label="الصفحة الرئيسية لـ Siege Winds">
-        <img class="brand-lockup__mark" src="assets/images/app-icon-256.png" width="256" height="256" alt="">
-        <img class="brand-lockup__wordmark" src="assets/images/siege-winds-logo.png" width="1200" height="371" alt="">
-      </a>
-      <nav class="campaign-nav" aria-label="التنقل الرئيسي">
-        <a href="#gameplay">الحصار</a><a href="#modes">الأنماط</a><a href="#arsenal">الترسانة</a><a href="#fair-play">القواعد</a>
-      </nav>
-      <div class="header-actions">
-        <nav class="language-nav" aria-label="اللغة">
-          <a href="index.html" lang="en">EN</a><a href="fr.html" lang="fr">FR</a><a href="ar.html" lang="ar" aria-current="page">ع</a>
-        </nav>
-        <a class="header-status" href="https://play.google.com/store/apps/details?id=com.siegewinds.game" aria-label="تنزيل Siege Winds من Google Play">Google Play</a>
-      </div>
-    </div>
-  </header>
-
+<body class="landing-page v2-page" dir="rtl">
+  <a class="skip-link" href="#main-content">انتقل إلى المحتوى</a>
+  <header class="campaign-header"><div class="campaign-header__inner">
+    <a class="brand-lockup" href="ar.html" aria-label="الصفحة الرئيسية لـ Siege Winds"><img class="brand-lockup__mark" src="assets/images/app-icon-256.png" width="256" height="256" alt=""><img class="brand-lockup__wordmark" src="assets/images/siege-winds-logo.png" width="1200" height="371" alt="Siege Winds"></a>
+    <nav class="campaign-nav" aria-label="التنقل الرئيسي"><a href="#gameplay">V2</a><a href="#campaign">الحملة</a><a href="#fort">حصني</a></nav>
+    <div class="header-actions"><nav class="language-nav" aria-label="اللغة"><a href="index.html" lang="en">EN</a><a href="fr.html" lang="fr">FR</a><a href="ar.html" lang="ar" aria-current="page">ع</a></nav><a class="header-status" href="https://play.google.com/store/apps/details?id=com.siegewinds.game" lang="en">Google Play</a></div>
+  </div></header>
   <main id="main-content">
-    <section class="landing-hero" aria-labelledby="hero-title">
-      <picture class="landing-hero__media">
-        <source media="(max-width: 720px)" srcset="assets/images/hero-siege-impact-mobile.webp">
-        <img class="landing-hero__art" src="assets/images/hero-siege-impact-wide.webp" width="1672" height="941" fetchpriority="high" alt="حصن حجري أزرق يطلق النار عبر وادٍ جبلي بينما تنفجر ضربة حاسمة في الحصن الأحمر المنافس.">
-      </picture>
-      <div class="landing-hero__content">
-        <p class="campaign-kicker">مبارزات مدفعية عند الأسوار</p>
-        <img class="hero-wordmark" src="assets/images/siege-winds-logo.png" width="1200" height="371" alt="Siege Winds">
-        <h1 id="hero-title">أسقط <span>حصن خصمك.</span></h1>
-        <p class="landing-hero__lead">جهّز المدفع. قدّر المدى. افتح الثغرة. كل قذيفة تهز الأسوار حتى ينكشف قلب الحصن.</p>
-        <div class="hero-actions">
-          <div class="store-actions">
-            <a class="campaign-button" href="https://apps.apple.com/app/siege-winds/id6785037486" aria-label="عرض Siege Winds على App Store">App Store <span aria-hidden="true">↖</span></a>
-            <a class="campaign-button campaign-button--secondary" href="https://play.google.com/store/apps/details?id=com.siegewinds.game" aria-label="تنزيل Siege Winds من Google Play">Google Play <span aria-hidden="true">↖</span></a>
-          </div>
-          <div class="release-lockup"><strong>تحميل مجاني على iPhone وAndroid</strong><span>العب فرديًا أو مع صديق على هاتف واحد</span></div>
-        </div>
-        <p class="platform-note">مباراة سريعة ضد الذكاء الاصطناعي · لاعب ضد لاعب محلي · حملة · أركيد</p>
-      </div>
-      <p class="hero-caption" aria-hidden="true">قذيفة واحدة قد تحسم الحصار.</p>
+    <section class="v2-hero v2-wrap" aria-labelledby="hero-title">
+      <div class="v2-copy"><p class="section-index">الفصل القادم من Siege Winds</p><h1 id="hero-title">سدّد. أطلق.<br><span>ابنِ حصنك.</span></h1><p class="v2-lead">تبدأ مبارزة المدافع بطلقتك التالية. اختر القذيفة، سدّد، اضبط كمية البارود وراقب أثر الضربة.</p><p class="v2-status">عرض النسخة الثانية · التحديث قادم</p><div class="v2-store-actions"><a class="campaign-button" href="https://apps.apple.com/app/siege-winds/id6785037486" lang="en">App Store <span aria-hidden="true">↗</span></a><a class="campaign-button campaign-button--secondary" href="https://play.google.com/store/apps/details?id=com.siegewinds.game" lang="en">Google Play <span aria-hidden="true">↗</span></a></div><p class="v2-note">واجهة النسخة الثانية حاليًا بالفرنسية. التحديث قادم إلى iPhone وAndroid.</p></div>
+      <figure class="v2-screen v2-hero-screen"><img src="assets/images/v2/v2-01-accueil.webp" width="720" height="1280" alt="شاشة البداية الحقيقية للنسخة الثانية بالفرنسية مع الحملة وورشة الحصن والملف الشخصي والمبارزة المحلية" fetchpriority="high"></figure>
     </section>
-
-    <section class="gameplay-preview" aria-labelledby="preview-title">
-      <div class="gameplay-preview__copy">
-        <h2 id="preview-title">شاهد اللعبة <span>أثناء اللعب.</span></h2>
-      </div>
-      <video class="gameplay-preview__video" controls playsinline preload="none" width="1080" height="1920" poster="assets/images/gameplay-preview-poster.png">
-        <source src="assets/media/first-gameplay-sound-fr.mp4" type="video/mp4">
-        لا يدعم متصفحك هذا الفيديو.
-      </video>
+    <section class="v2-section v2-wrap" id="gameplay" aria-labelledby="gameplay-title">
+      <div class="v2-copy"><p class="section-index">لعب حقيقي</p><h2 id="gameplay-title">طلقتك.<br><span>وأثرها.</span></h2><p>لقطات حقيقية من النسخة الثانية القادمة. مبارزات المدافع والحملة وورشة الحصن كما تظهر في اللعبة.</p><div class="v2-steps"><div><h3>سدّد</h3><p>اسحب لضبط زاوية المدفع.</p></div><div><h3>اضبط الشحنة</h3><p>اضغط مطولًا لتحديد البارود، ثم ارفع إصبعك للإطلاق.</p></div><div><h3>راقب الضربة</h3><p>شاهد القذيفة تضرب حصن الخصم واستعد للطلقة التالية.</p></div></div></div>
+      <figure class="v2-screen"><img src="assets/images/v2/v2-02-duel.webp" width="720" height="1280" loading="lazy" alt="مبارزة حقيقية من النسخة الثانية مع أدوات التصويب والبارود"></figure>
     </section>
-
-    <div class="command-strip" role="group" aria-label="المراحل الأربع للطلقة">
-      <span>اكشف موضع الضعف</span><i aria-hidden="true">◆</i><span>اضبط المدفع</span><i aria-hidden="true">◆</i><span>افتح الثغرة</span><i aria-hidden="true">◆</i><span>بلغ القلب</span>
-    </div>
-
-    <section class="impact-section" id="duel" aria-labelledby="impact-title">
-      <div class="impact-visual">
-        <p class="visual-stamp">مشهد Siege Winds · التوجه الفني الحالي</p>
-        <img src="assets/images/hero-siege-impact-mobile.webp" width="941" height="1672" loading="lazy" alt="حصن حجري أزرق يطلق النار عبر وادٍ جبلي بينما تصيب ضربة حاسمة الحصن الأحمر المنافس.">
-      </div>
-      <div class="impact-copy">
-        <p class="section-index">الحصار</p>
-        <h2 id="impact-title">هدف واحد.<br><span>أسقطه.</span></h2>
-        <p>زعزع الحجر. حطّم الدعامات. افتح ثغرة إلى القلب. تحتفظ الأسوار بأثر كل قذيفة، وكل جدار يسقط يمهّد للطلقة التالية.</p>
-        <p class="localization-note">تعرض الصور النسخة الإنجليزية الحالية.</p>
-        <div class="impact-verdict"><strong>سدّد. أطلق. افتح الثغرة.</strong><span>دمّر القلب المكشوف قبل أن يصل خصمك إلى قلب حصنك.</span></div>
-      </div>
-    </section>
-
-    <section class="field-report" id="gameplay" aria-labelledby="decision-title">
-      <svg class="story-trajectory" viewBox="0 0 1200 520" aria-hidden="true" focusable="false">
-        <path d="M35 452 C260 410 315 110 575 128 S880 390 1165 86"></path><circle cx="35" cy="452" r="8"></circle><circle cx="575" cy="128" r="8"></circle><circle class="impact-ring" cx="1165" cy="86" r="22"></circle>
-      </svg>
-      <div class="mechanic-layout">
-        <div class="section-copy">
-          <p class="section-index">جهّز الطلقة</p>
-          <h2 id="decision-title">كل قذيفة<br><span>تهز الحصن.</span></h2>
-          <p class="section-lead">اختر السور الذي يجب أن ينهار، ثم حوّل المسار إلى ثغرة.</p>
-          <div class="decision-list">
-            <article class="decision"><span class="decision__mark" aria-hidden="true">01</span><div><h3>اختر القذيفة</h3><p>اختر الطلقة المناسبة للهدف ولمقدار البارود الذي يمكنك إنفاقه.</p></div></article>
-            <article class="decision"><span class="decision__mark" aria-hidden="true">02</span><div><h3>اضبط الزاوية</h3><p>ارفع المدفع أو اخفضه لتجاوز الوادي والوصول إلى الحصن.</p></div></article>
-            <article class="decision"><span class="decision__mark" aria-hidden="true">03</span><div><h3>حمّل البارود ثم أطلق</h3><p>ثبّت الشحنة، أطلق القذيفة، ثم راقب الضرر.</p></div></article>
-          </div>
-        </div>
-        <figure class="phone-proof">
-          <span class="proof-label">كل قرار يترك أثره على الأسوار</span>
-          <img src="assets/images/current-gameplay.webp" width="884" height="1920" loading="lazy" alt="لقطة حالية من قتال Siege Winds تعرض حصنين جبليين وأدوات المدفعية.">
-        </figure>
-      </div>
-    </section>
-
-    <section class="modes-section" id="modes" aria-labelledby="modes-title">
-      <div class="modes-intro">
-        <p class="section-index">اختر المعركة</p>
-        <h2 id="modes-title">اختر <span>مبارزتك.</span></h2>
-        <p>تتضمن اللعبة خمس طرق مباشرة لخوض المعركة.</p>
-      </div>
-      <div class="battle-lines">
-        <article class="battle-line"><h3>مباراة سريعة ضد الذكاء الاصطناعي</h3><p>ابدأ فورًا مبارزة مدفعية سريعة ضد الحاسوب.</p><strong>فردي</strong></article>
-        <article class="battle-line"><h3>لاعب ضد لاعب محلي</h3><p>مرّر الهاتف نفسه، وسلّم الدور، ثم احسم جولة الإعادة معًا.</p><strong>الجهاز نفسه</strong></article>
-        <article class="battle-line"><h3>الحملة</h3><p>استولِ على 20 برجًا في عوالم النهر والصحراء والثلج والغابة.</p><strong>تقدّم</strong></article>
-        <article class="battle-line"><h3>الأركيد · Master Circuit</h3><p>حقق 12 فوزًا في الأركيد، ثم واجه ثلاثة حصون في Master Circuit.</p><strong>Master Circuit</strong></article>
-        <article class="battle-line"><h3>المعارك المصنفة</h3><p>العب متى شئت. يرد خصمك عندما يكون مستعدًا.</p><strong>عبر الإنترنت</strong></article>
-      </div>
-    </section>
-
-    <section class="arsenal-section" id="arsenal" aria-labelledby="arsenal-title">
-      <div class="arsenal-copy">
-        <p class="section-index">اختر المدفع</p>
-        <h2 id="arsenal-title">ابنِ الترسانة <span>المناسبة.</span></h2>
-        <p>اجمع خمسة عشر مدفعًا باللعب وبلوغ مراحل واضحة. لكل مدفع شكل وطريقة تحكم مميزة.</p>
-        <ul class="arsenal-facts"><li><strong>15</strong><span>مدفعًا لجمعها</span></li><li><strong>0</strong><span>مكافآت عشوائية مدفوعة</span></li></ul>
-        <p class="localization-note">تعرض شاشات التقدم النسخة الإنجليزية الحالية.</p>
-      </div>
-      <div class="arsenal-stage" role="group" aria-label="شاشات التقدم من إصدار Siege Winds الإنجليزي الحالي">
-        <img class="arsenal-stage__journey" src="assets/images/current-journey-hub.webp" width="884" height="1920" loading="lazy" alt="شاشة المسارات الحالية في Siege Winds وتعرض التدريب والأركيد والحملة.">
-        <img class="arsenal-stage__collection" src="assets/images/current-cannon-collection.webp" width="884" height="1920" loading="lazy" alt="مجموعة المدافع الحالية في Siege Winds وتعرض عدة قطع مدفعية قابلة للفتح.">
-      </div>
-    </section>
-
-    <section class="oath-section" id="fair-play" aria-labelledby="oath-title">
-      <div class="oath">
-        <p class="section-index">قاعدة الحصار</p>
-        <h2 id="oath-title">النصر يُحرز.<br><span>ولا يُشترى.</span></h2>
-        <div class="oath-copy">
-          <p>تقدّم بلا سحب عشوائي مدفوع ولا أفضلية تُشترى: الطلقة الأفضل هي التي تحسم الفائز.</p>
-          <ul class="oath-list"><li>لا صناديق عشوائية</li><li>لا أفضلية مدفوعة</li><li>لا رهانات</li><li>خيار بلا إعلانات</li></ul>
-          <p class="oath-detail">عند تفعيلها، تكون إعلانات المكافآت اختيارية وتكون المشتريات مباشرة أو تجميلية أو لإزالة الإعلانات. متاح على App Store وGoogle Play.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="final-call" id="release" aria-labelledby="final-title">
-      <img src="assets/images/hero-siege-impact-wide.webp" width="1672" height="941" loading="lazy" alt="" aria-hidden="true">
-      <div class="final-call__inner">
-        <p class="section-index">العب الآن</p>
-        <h2 id="final-title">الحصار يصل<br><span>إلى المتجرين.</span></h2>
-        <p>Siege Winds متاح على App Store وGoogle Play.</p>
-        <div class="final-actions">
-          <a class="final-status" href="https://apps.apple.com/app/siege-winds/id6785037486" aria-label="عرض Siege Winds على App Store">App Store</a>
-          <a class="final-status" href="https://play.google.com/store/apps/details?id=com.siegewinds.game" aria-label="تنزيل Siege Winds من Google Play">Google Play</a>
-        </div>
-      </div>
-    </section>
+    <section class="v2-section v2-section--reverse v2-wrap" id="campaign" aria-labelledby="campaign-title"><figure class="v2-screen"><img src="assets/images/v2/v2-05-mondes.webp" width="720" height="1280" alt="اختيار عوالم الحملة في النسخة الثانية بالفرنسية" loading="lazy"></figure><div class="v2-copy"><p class="section-index">الحملة</p><h2 id="campaign-title">افتح الطريق.<br><span>مبارزة بعد أخرى.</span></h2><p>اختر عالمًا مفتوحًا، ادخل المبارزة وتقدّم في الحملة. تبدأ الرحلة بين أسوار روشبرون الجبلية.</p><p class="v2-note">تفضّل تحدّي صديق؟ تبادلا الأدوار على الهاتف نفسه في وضع المبارزة المحلية للاعبين.</p></div></section>
+    <section class="v2-section v2-wrap" id="fort" aria-labelledby="fort-title"><div class="v2-copy"><p class="section-index">حصني</p><h2 id="fort-title">ضع الحجر.<br><span>واختبر دفاعاتك.</span></h2><p>ابنِ بالحجر والخشب والحديد. ضع القطع ودوّرها، احفظ حصنك ثم اختبر صموده أمام القذائف.</p></div><figure class="v2-screen"><img src="assets/images/v2/v2-04-atelier-fort.webp" width="720" height="1280" alt="ورشة الحصن في النسخة الثانية مع قطع البناء وأدواتها" loading="lazy"></figure></section>
+    <section class="v2-section v2-section--reverse v2-wrap" id="equipment" aria-labelledby="equipment-title"><figure class="v2-screen"><img src="assets/images/v2/v2-03-armurerie.webp" width="720" height="1280" alt="ترسانة النسخة الثانية بالفرنسية مع المدافع والآليات" loading="lazy"></figure><div class="v2-copy"><p class="section-index">التجهيزات والمظاهر</p><h2 id="equipment-title">جهّز مدفعك.<br><span>وامنحه طابعك.</span></h2><p>اختر مدفعك وآلياته من الترسانة. استعرض المظاهر التجميلية في ملفك الشخصي وخصّص تجهيزاتك.</p><p class="v2-note">تعرض الترسانة تجهيزات تفتحها بالتقدّم في الحملة. المظاهر التجميلية منفصلة عن تجهيزات القتال.</p></div></section>
+    <section class="v2-release v2-wrap" id="release" aria-labelledby="release-title"><p class="section-index">تابع الفصل القادم</p><h2 id="release-title">النسخة الثانية<br><span>قيد التحضير.</span></h2><p>تجد النسخة الحالية من Siege Winds في المتاجر. تحديث النسخة الثانية ما زال قيد التحضير.</p><div class="v2-store-actions"><a class="campaign-button" href="https://apps.apple.com/app/siege-winds/id6785037486" lang="en">App Store <span aria-hidden="true">↗</span></a><a class="campaign-button campaign-button--secondary" href="https://play.google.com/store/apps/details?id=com.siegewinds.game" lang="en">Google Play <span aria-hidden="true">↗</span></a></div><nav class="v2-social" aria-label="تابع Siege Winds"><a href="https://www.instagram.com/siegewinds.game/">Instagram</a><a href="https://www.tiktok.com/@siegewinds">TikTok</a><a href="https://www.youtube.com/@siegewinds">YouTube</a></nav><p class="v2-note">لقطات حقيقية من النسخة الثانية. أُنشئت بعض الرسومات بمساعدة الذكاء الاصطناعي.</p></section>
   </main>
-
-  <footer class="landing-footer">
-    <p>© 2026 Siege Winds</p>
-    <nav aria-label="معلومات">
-      <a href="privacy-ar.html">الخصوصية</a>
-      <a href="support-ar.html">الدعم</a>
-    </nav>
-  </footer>
+  <footer class="landing-footer"><p>© 2026 Siege Winds</p><nav aria-label="معلومات"><a href="privacy-ar.html">الخصوصية</a><a href="support-ar.html">الدعم</a><a href="press.html">الملف الصحفي</a><a href="mailto:contact@siegewinds.com">تواصل معنا</a></nav></footer>
 </body>
 </html>

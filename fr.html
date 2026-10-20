@@ -1,225 +1,52 @@
 <!DOCTYPE html>
-<!--
-THESIS: Siege Winds porte une promesse mémorable : réussir le tir qui fait réellement tomber la forteresse adverse.
-OWN-WORLD: Nuit alpine, forts de pierre monumentaux, canons de fer, bannières bleues et rouges, barres de commandement or forgé et fumée éclairée par l’impact.
-STORY: Désirer l’impact décisif, comprendre la brèche, maîtriser les trois décisions du tir, choisir un duel, bâtir son arsenal, croire à la promesse de fair-play et voir le statut exact des versions iOS et Android.
-FIRST VIEWPORT: Barre de commandement noire fixe, illustration d’impact originale plein écran, promesse monumentale de destruction, une action App Store dorée et statut iOS/Android immédiatement visible.
-FORM: Magazine du front des forteresses, quatrième structure ancrée, seed 5fb05b3d.
--->
 <html lang="fr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="description" content="Siege Winds est un jeu mobile d’artillerie gratuit sur iPhone et Android. Joue solo contre l’IA ou à deux en partageant le même téléphone dans des duels brefs.">
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MobileApplication",
-      "name": "Siege Winds",
-      "url": "https://siegewinds.com/fr.html",
-      "description": "Siege Winds est un jeu mobile d’artillerie gratuit sur iPhone et Android. Joue solo contre l’IA ou à deux en partageant le même téléphone dans des duels brefs.",
-      "image": "https://siegewinds.com/assets/images/hero-siege-impact-wide.webp",
-      "applicationCategory": "GameApplication",
-      "operatingSystem": ["iOS", "Android"],
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "downloadUrl": [
-        "https://apps.apple.com/app/siege-winds/id6785037486",
-        "https://play.google.com/store/apps/details?id=com.siegewinds.game"
-      ]
-    }
-  </script>
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Siege Winds">
-  <meta property="og:title" content="Siege Winds — Fais céder le fort rival">
-  <meta property="og:description" content="Siege Winds est disponible sur l’App Store et Google Play. Choisis ton tir et fais céder le fort rival.">
-  <meta property="og:url" content="https://siegewinds.com/fr.html">
-  <meta property="og:image" content="https://siegewinds.com/assets/images/hero-siege-impact-wide.webp">
-  <meta property="og:image:width" content="1672">
-  <meta property="og:image:height" content="941">
-  <meta property="og:locale" content="fr_FR">
-  <meta property="og:locale:alternate" content="en_US">
-  <meta property="og:locale:alternate" content="ar">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="description" content="Découvrez Siege Winds V2 : duels de canons, campagne, forts à bâtir et cosmétiques. Mise à jour à venir sur iPhone et Android ; interface actuellement en français.">
+  <title>Siege Winds V2 | Duels de canons, campagne et construction de fort</title>
   <link rel="canonical" href="https://siegewinds.com/fr.html">
   <link rel="alternate" hreflang="en" href="https://siegewinds.com/">
   <link rel="alternate" hreflang="fr" href="https://siegewinds.com/fr.html">
   <link rel="alternate" hreflang="ar" href="https://siegewinds.com/ar.html">
   <link rel="alternate" hreflang="x-default" href="https://siegewinds.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Siege Winds">
+  <meta property="og:title" content="Siege Winds V2 | Duels de canons, campagne et construction de fort">
+  <meta property="og:description" content="Découvrez Siege Winds V2 : duels de canons, campagne, forts à bâtir et cosmétiques. Mise à jour à venir sur iPhone et Android ; interface actuellement en français.">
+  <meta property="og:url" content="https://siegewinds.com/fr.html">
+  <meta property="og:image" content="https://siegewinds.com/assets/images/v2/v2-02-duel.webp">
+  <meta property="og:image:width" content="720">
+  <meta property="og:image:height" content="1280">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/images/app-icon-256.png" type="image/png">
-  <link rel="preload" href="assets/images/hero-siege-impact-wide.webp" as="image" media="(min-width: 721px)">
-  <link rel="preload" href="assets/images/hero-siege-impact-mobile.webp" as="image" media="(max-width: 720px)">
   <link rel="stylesheet" href="landing.css">
   <script src="campaign-links.js" defer></script>
-  <title>Siege Winds | Jeu d’artillerie mobile et duels de canons</title>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoGame", "name": "Siege Winds", "url": "https://siegewinds.com/fr.html", "description": "Découvrez Siege Winds V2 : duels de canons, campagne, forts à bâtir et cosmétiques. Mise à jour à venir sur iPhone et Android ; interface actuellement en français.", "image": "https://siegewinds.com/assets/images/v2/v2-02-duel.webp", "gamePlatform": ["iOS", "Android"], "inLanguage": "fr"}</script>
 </head>
-<body class="landing-page">
-  <a class="skip-link" href="#main-content">Aller au siège</a>
-
-  <header class="campaign-header">
-    <div class="campaign-header__inner">
-      <a class="brand-lockup" href="fr.html" aria-label="Accueil Siege Winds">
-        <img class="brand-lockup__mark" src="assets/images/app-icon-256.png" width="256" height="256" alt="">
-        <img class="brand-lockup__wordmark" src="assets/images/siege-winds-logo.png" width="1200" height="371" alt="">
-      </a>
-      <nav class="campaign-nav" aria-label="Navigation principale">
-        <a href="#gameplay">Le siège</a>
-        <a href="#modes">Modes</a>
-        <a href="#arsenal">Arsenal</a>
-        <a href="#fair-play">Règles</a>
-      </nav>
-      <div class="header-actions">
-        <nav class="language-nav" aria-label="Langue">
-          <a href="index.html" lang="en">EN</a>
-          <a href="fr.html" lang="fr" aria-current="page">FR</a>
-          <a href="ar.html" lang="ar" hreflang="ar">ع</a>
-        </nav>
-        <a class="header-status" href="https://play.google.com/store/apps/details?id=com.siegewinds.game" aria-label="Télécharger Siege Winds sur Google Play">Google Play</a>
-      </div>
-    </div>
-  </header>
-
+<body class="landing-page v2-page">
+  <a class="skip-link" href="#main-content">Aller au contenu</a>
+  <header class="campaign-header"><div class="campaign-header__inner">
+    <a class="brand-lockup" href="fr.html" aria-label="Accueil Siege Winds"><img class="brand-lockup__mark" src="assets/images/app-icon-256.png" width="256" height="256" alt=""><img class="brand-lockup__wordmark" src="assets/images/siege-winds-logo.png" width="1200" height="371" alt="Siege Winds"></a>
+    <nav class="campaign-nav" aria-label="Navigation principale"><a href="#gameplay">V2</a><a href="#campaign">Campagne</a><a href="#fort">Mon fort</a></nav>
+    <div class="header-actions"><nav class="language-nav" aria-label="Langue"><a href="index.html" lang="en">EN</a><a href="fr.html" lang="fr" aria-current="page">FR</a><a href="ar.html" lang="ar">ع</a></nav><a class="header-status" href="https://play.google.com/store/apps/details?id=com.siegewinds.game" lang="en">Google Play</a></div>
+  </div></header>
   <main id="main-content">
-    <section class="landing-hero" aria-labelledby="hero-title">
-      <picture class="landing-hero__media">
-        <source media="(max-width: 720px)" srcset="assets/images/hero-siege-impact-mobile.webp">
-        <img class="landing-hero__art" src="assets/images/hero-siege-impact-wide.webp" width="1672" height="941" fetchpriority="high" alt="Un fort bleu tire à travers une vallée alpine tandis qu’un impact décisif fait exploser le fort rouge rival.">
-      </picture>
-      <div class="landing-hero__content">
-        <p class="campaign-kicker">Duels d’artillerie au pied des remparts</p>
-        <img class="hero-wordmark" src="assets/images/siege-winds-logo.png" width="1200" height="371" alt="Siege Winds">
-        <h1 id="hero-title">Fais céder le <span>fort rival.</span></h1>
-        <p class="landing-hero__lead">Arme ton canon. Jauge la portée. Ouvre une brèche. Chaque boulet ébranle les remparts jusqu’à mettre le cœur à nu.</p>
-        <div class="hero-actions">
-          <div class="store-actions">
-            <a class="campaign-button" href="https://apps.apple.com/app/siege-winds/id6785037486" aria-label="Voir Siege Winds sur l’App Store">App Store <span aria-hidden="true">↗</span></a>
-            <a class="campaign-button campaign-button--secondary" href="https://play.google.com/store/apps/details?id=com.siegewinds.game" aria-label="Télécharger Siege Winds sur Google Play">Google Play <span aria-hidden="true">↗</span></a>
-          </div>
-          <div class="release-lockup"><strong>Téléchargement gratuit sur iPhone et Android</strong><span>Joue solo ou à deux sur le même téléphone</span></div>
-        </div>
-        <p class="platform-note">Partie rapide contre l’IA · 1v1 local · Campagne · Arcade</p>
-      </div>
-      <p class="hero-caption" aria-hidden="true">Un seul boulet peut décider du siège.</p>
+    <section class="v2-hero v2-wrap" aria-labelledby="hero-title">
+      <div class="v2-copy"><p class="section-index">Le prochain chapitre de Siege Winds</p><h1 id="hero-title">Visez. Tirez.<br><span>Bâtissez votre fort.</span></h1><p class="v2-lead">Un duel de canons commence par votre prochain tir. Choisissez le boulet, visez, dosez la poudre et observez l’impact.</p><p class="v2-status">Présentation V2 · Mise à jour à venir</p><div class="v2-store-actions"><a class="campaign-button" href="https://apps.apple.com/app/siege-winds/id6785037486" lang="en">App Store <span aria-hidden="true">↗</span></a><a class="campaign-button campaign-button--secondary" href="https://play.google.com/store/apps/details?id=com.siegewinds.game" lang="en">Google Play <span aria-hidden="true">↗</span></a></div><p class="v2-note">Interface V2 en français. La mise à jour arrive sur iPhone et Android.</p></div>
+      <figure class="v2-screen v2-hero-screen"><img src="assets/images/v2/v2-01-accueil.webp" width="720" height="1280" alt="Accueil réel de Siege Winds V2 en français avec campagne, atelier du fort, profil et duel local" fetchpriority="high"></figure>
     </section>
-
-    <section class="gameplay-preview" aria-labelledby="preview-title">
-      <div class="gameplay-preview__copy">
-        <h2 id="preview-title">Voir le jeu <span>en action.</span></h2>
-      </div>
-      <video class="gameplay-preview__video" controls playsinline preload="none" width="1080" height="1920" poster="assets/images/gameplay-preview-poster.png">
-        <source src="assets/media/first-gameplay-sound-fr.mp4" type="video/mp4">
-        Votre navigateur ne prend pas en charge cette vidéo.
-      </video>
+    <section class="v2-section v2-wrap" id="gameplay" aria-labelledby="gameplay-title">
+      <div class="v2-copy"><p class="section-index">Du gameplay réel</p><h2 id="gameplay-title">Votre tir.<br><span>Son impact.</span></h2><p>Des captures réelles de la V2 à venir. Duels de canons, campagne et atelier du fort, tels qu’ils apparaissent dans le jeu.</p><div class="v2-steps"><div><h3>Visez</h3><p>Glissez pour régler l’angle du canon.</p></div><div><h3>Dosez</h3><p>Maintenez pour charger la poudre, puis relâchez pour tirer.</p></div><div><h3>Observez l’impact</h3><p>Voyez le boulet frapper le fort adverse et préparez le suivant.</p></div></div></div>
+      <figure class="v2-screen"><img src="assets/images/v2/v2-02-duel.webp" width="720" height="1280" loading="lazy" alt="Duel réel de Siege Winds V2 avec les commandes de visée et de poudre"></figure>
     </section>
-
-    <div class="command-strip" role="group" aria-label="Les quatre étapes d’un tir">
-      <span>Repère la faille</span><i aria-hidden="true">◆</i>
-      <span>Règle le canon</span><i aria-hidden="true">◆</i>
-      <span>Ouvre la brèche</span><i aria-hidden="true">◆</i>
-      <span>Atteins le cœur</span>
-    </div>
-
-    <section class="impact-section" id="duel" aria-labelledby="impact-title">
-      <div class="impact-visual">
-        <p class="visual-stamp">Visuel Siege Winds · Direction artistique actuelle</p>
-        <img src="assets/images/hero-siege-impact-mobile.webp" width="941" height="1672" loading="lazy" alt="Un fort bleu tire à travers une vallée alpine tandis qu’un impact décisif frappe le fort rouge rival.">
-      </div>
-      <div class="impact-copy">
-        <p class="section-index">Le siège</p>
-        <h2 id="impact-title">Un seul but.<br><span>Le faire tomber.</span></h2>
-        <p>Ébranle la pierre. Romps les appuis. Ouvre une brèche jusqu’au cœur. Les remparts gardent la marque de chaque boulet : une muraille abattue prépare le tir suivant.</p>
-        <p class="localization-note">Les captures présentent la version anglaise actuelle.</p>
-        <div class="impact-verdict"><strong>Vise. Tire. Ouvre la brèche.</strong><span>Détruis le cœur exposé avant que ton rival n’atteigne le tien.</span></div>
-      </div>
-    </section>
-
-    <section class="field-report" id="gameplay" aria-labelledby="decision-title">
-      <svg class="story-trajectory" viewBox="0 0 1200 520" aria-hidden="true" focusable="false">
-        <path d="M35 452 C260 410 315 110 575 128 S880 390 1165 86"></path><circle cx="35" cy="452" r="8"></circle><circle cx="575" cy="128" r="8"></circle><circle class="impact-ring" cx="1165" cy="86" r="22"></circle>
-      </svg>
-      <div class="mechanic-layout">
-        <div class="section-copy">
-          <p class="section-index">Prépare le tir</p>
-          <h2 id="decision-title">Chaque tir<br><span>ébranle le fort.</span></h2>
-          <p class="section-lead">Choisis le pan de muraille qui doit céder. Puis transforme ta trajectoire en brèche.</p>
-          <div class="decision-list">
-            <article class="decision"><span class="decision__mark" aria-hidden="true">01</span><div><h3>Choisis le boulet</h3><p>Prends le tir adapté à la cible et à la poudre que tu peux dépenser.</p></div></article>
-            <article class="decision"><span class="decision__mark" aria-hidden="true">02</span><div><h3>Règle l’angle</h3><p>Monte ou baisse le canon pour franchir la gorge et atteindre le fort.</p></div></article>
-            <article class="decision"><span class="decision__mark" aria-hidden="true">03</span><div><h3>Charge la poudre, puis tire</h3><p>Engage la charge, libère le boulet et observe les dégâts.</p></div></article>
-          </div>
-        </div>
-        <figure class="phone-proof">
-          <span class="proof-label">Chaque décision laisse sa marque sur les remparts</span>
-          <img src="assets/images/current-gameplay.webp" width="884" height="1920" loading="lazy" alt="Capture actuelle du combat mobile de Siege Winds montrant deux forts alpins et les commandes d’artillerie.">
-        </figure>
-      </div>
-    </section>
-
-    <section class="modes-section" id="modes" aria-labelledby="modes-title">
-      <div class="modes-intro">
-        <p class="section-index">Choisis la bataille</p>
-        <h2 id="modes-title">Choisis ton <span>siège.</span></h2>
-        <p>Cinq façons directes de livrer bataille sont incluses.</p>
-      </div>
-      <div class="battle-lines">
-        <article class="battle-line"><h3>Partie rapide contre l’IA</h3><p>Lance immédiatement un duel d’artillerie rapide contre l’ordinateur.</p><strong>Solo</strong></article>
-        <article class="battle-line"><h3>1v1 local</h3><p>Passe le même téléphone, transmets le tour et règle la revanche à deux.</p><strong>Même appareil</strong></article>
-        <article class="battle-line"><h3>Campagne</h3><p>Conquiers 20 tours entre rivière, désert, neige et jungle.</p><strong>Progression</strong></article>
-        <article class="battle-line"><h3>Arcade · Master Circuit</h3><p>Gravis une route Arcade de 12 victoires, puis affronte trois forts maîtres.</p><strong>Master Circuit</strong></article>
-        <article class="battle-line"><h3>Combats classés</h3><p>Joue quand tu veux. Ton adversaire répond quand il est prêt.</p><strong>En ligne</strong></article>
-      </div>
-    </section>
-
-    <section class="arsenal-section" id="arsenal" aria-labelledby="arsenal-title">
-      <div class="arsenal-copy">
-        <p class="section-index">Choisis le canon</p>
-        <h2 id="arsenal-title">Forge ton <span>arsenal.</span></h2>
-        <p>Collectionne quinze canons en jouant et en franchissant des étapes claires. Chacun possède une silhouette et un maniement distincts.</p>
-        <ul class="arsenal-facts"><li><strong>15</strong><span>canons à collectionner</span></li><li><strong>0</strong><span>récompense aléatoire payante</span></li></ul>
-        <p class="localization-note">Les écrans de progression présentent la version anglaise actuelle.</p>
-      </div>
-      <div class="arsenal-stage" role="group" aria-label="Écrans de progression de la version anglaise actuelle de Siege Winds">
-        <img class="arsenal-stage__journey" src="assets/images/current-journey-hub.webp" width="884" height="1920" loading="lazy" alt="Sélection actuelle des parcours Siege Winds avec tutoriel, arcade et campagne.">
-        <img class="arsenal-stage__collection" src="assets/images/current-cannon-collection.webp" width="884" height="1920" loading="lazy" alt="Collection actuelle de Siege Winds montrant plusieurs pièces d’artillerie à débloquer.">
-      </div>
-    </section>
-
-    <section class="oath-section" id="fair-play" aria-labelledby="oath-title">
-      <div class="oath">
-        <p class="section-index">La règle du siège</p>
-        <h2 id="oath-title">La victoire se gagne.<br><span>Elle ne s’achète pas.</span></h2>
-        <div class="oath-copy">
-          <p>Une progression sans tirage aléatoire payant ni avantage à acheter : le meilleur tir décide du vainqueur.</p>
-          <ul class="oath-list"><li>Aucun coffre aléatoire</li><li>Aucun avantage payant</li><li>Aucun pari</li><li>Option sans publicité</li></ul>
-          <p class="oath-detail">Lorsqu’elles sont activées, les publicités récompensées sont facultatives et les achats sont directs, cosmétiques ou sans publicité. Disponible sur l’App Store et Google Play.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="final-call" id="release" aria-labelledby="final-title">
-      <img src="assets/images/hero-siege-impact-wide.webp" width="1672" height="941" loading="lazy" alt="" aria-hidden="true">
-      <div class="final-call__inner">
-        <p class="section-index">Joue maintenant</p>
-        <h2 id="final-title">Le siège arrive<br><span>sur les deux stores.</span></h2>
-        <p>Siege Winds est disponible sur l’App Store et Google Play.</p>
-        <div class="final-actions">
-          <a class="final-status" href="https://apps.apple.com/app/siege-winds/id6785037486" aria-label="Voir Siege Winds sur l’App Store">App Store</a>
-          <a class="final-status" href="https://play.google.com/store/apps/details?id=com.siegewinds.game" aria-label="Télécharger Siege Winds sur Google Play">Google Play</a>
-        </div>
-      </div>
-    </section>
+    <section class="v2-section v2-section--reverse v2-wrap" id="campaign" aria-labelledby="campaign-title"><figure class="v2-screen"><img src="assets/images/v2/v2-05-mondes.webp" width="720" height="1280" alt="Choix des mondes de la campagne V2 en français" loading="lazy"></figure><div class="v2-copy"><p class="section-index">Campagne</p><h2 id="campaign-title">Rouvrez la route.<br><span>Un duel à la fois.</span></h2><p>Choisissez un monde ouvert, entrez en duel et poursuivez la campagne. Le voyage commence dans les remparts alpins de Rochebrune.</p><p class="v2-note">Envie d’un duel entre amis ? Jouez chacun votre tour sur le même téléphone en mode local à deux.</p></div></section>
+    <section class="v2-section v2-wrap" id="fort" aria-labelledby="fort-title"><div class="v2-copy"><p class="section-index">Mon fort</p><h2 id="fort-title">Posez la pierre.<br><span>Éprouvez vos défenses.</span></h2><p>Construisez en pierre, en bois et en fer. Placez et pivotez les pièces, sauvegardez votre fort, puis testez sa résistance aux boulets.</p></div><figure class="v2-screen"><img src="assets/images/v2/v2-04-atelier-fort.webp" width="720" height="1280" alt="Atelier du fort V2 avec les pièces posées et les commandes de construction" loading="lazy"></figure></section>
+    <section class="v2-section v2-section--reverse v2-wrap" id="equipment" aria-labelledby="equipment-title"><figure class="v2-screen"><img src="assets/images/v2/v2-03-armurerie.webp" width="720" height="1280" alt="Armurerie V2 en français avec canons et mécanismes" loading="lazy"></figure><div class="v2-copy"><p class="section-index">Équipement et cosmétiques</p><h2 id="equipment-title">Préparez votre canon.<br><span>Donnez-lui votre style.</span></h2><p>Choisissez votre canon et ses mécanismes dans l’armurerie. Découvrez les apparences cosmétiques dans votre profil et personnalisez votre équipement.</p><p class="v2-note">L’armurerie présentée ici comprend des équipements à obtenir en progressant dans la campagne. Les apparences cosmétiques sont distinctes des équipements de combat.</p></div></section>
+    <section class="v2-release v2-wrap" id="release" aria-labelledby="release-title"><p class="section-index">Suivez le prochain chapitre</p><h2 id="release-title">La V2<br><span>se prépare.</span></h2><p>Retrouvez la version actuelle de Siege Winds en boutique. La mise à jour V2 est en cours de préparation.</p><div class="v2-store-actions"><a class="campaign-button" href="https://apps.apple.com/app/siege-winds/id6785037486" lang="en">App Store <span aria-hidden="true">↗</span></a><a class="campaign-button campaign-button--secondary" href="https://play.google.com/store/apps/details?id=com.siegewinds.game" lang="en">Google Play <span aria-hidden="true">↗</span></a></div><nav class="v2-social" aria-label="Suivre Siege Winds"><a href="https://www.instagram.com/siegewinds.game/">Instagram</a><a href="https://www.tiktok.com/@siegewinds">TikTok</a><a href="https://www.youtube.com/@siegewinds">YouTube</a></nav><p class="v2-note">Captures réelles de la V2. Certains éléments visuels du jeu ont été créés avec l’aide de l’IA.</p></section>
   </main>
-
-  <footer class="landing-footer">
-    <p>© 2026 Siege Winds</p>
-    <nav aria-label="Informations">
-      <a href="privacy-fr.html">Confidentialité</a>
-      <a href="support-fr.html">Assistance</a>
-    </nav>
-  </footer>
+  <footer class="landing-footer"><p>© 2026 Siege Winds</p><nav aria-label="Informations"><a href="privacy-fr.html">Confidentialité</a><a href="support-fr.html">Assistance</a><a href="press.html">Kit presse</a><a href="mailto:contact@siegewinds.com">Contact</a></nav></footer>
 </body>
 </html>
